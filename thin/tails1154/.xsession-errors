@@ -1,0 +1,24 @@
+Xsession: X session started for tails1154 at Wed 18 Jun 22:04:16 CDT 2025
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/tails1154/.Xauthority
+localuser:tails1154 being added to access control list
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
+Xsession: X session started for tails1154 at Wed 18 Jun 22:05:29 CDT 2025
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/tails1154/.Xauthority
+localuser:tails1154 being added to access control list
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
+Xsession: X session started for tails1154 at Wed 18 Jun 22:08:42 CDT 2025
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/tails1154/.Xauthority
+localuser:tails1154 being added to access control list
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
+Xsession: X session started for tails1154 at Wed 18 Jun 22:09:09 CDT 2025
+dbus-update-activation-environment: setting DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+dbus-update-activation-environment: setting DISPLAY=:0
+dbus-update-activation-environment: setting XAUTHORITY=/home/tails1154/.Xauthority
+localuser:tails1154 being added to access control list
+xterm: fatal IO error 11 (Resource temporarily unavailable) or KillClient on X server ":0"
