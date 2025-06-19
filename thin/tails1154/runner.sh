@@ -1,11 +1,13 @@
 #!/bin/bash
 echo "[runner.sh] runner.sh started"
+echo "[runner.sh] Starting pulseaudio"
+pulseaudio --start -D
 counter=0
 while [ yes ]; do
 	echo "[runner.sh] Running firmware"
 	cd /home/tails1154/client
 	python3 firmware.py | tee > /home/tails1154/logs/firmware.log
-	if [ ls counter.stop ]; then
+	if [ $(ls counter.stop) ]; then
 	echo "[runner.sh] Counter bypassed because counter.stop exists."
 	rm -rf counter.stop
 	else

@@ -1,8 +1,6 @@
 import pygame
 import subprocess
 import sys
-import requests
-
 
 # pygame setup
 pygame.init()
@@ -18,7 +16,7 @@ text_surface = font.render('Hello, Pygame!', True, (255, 255, 255))  # White tex
 # screen.blit(text_surface, (100, 100))  # Position at (100, 100)
 pygame.display.flip()
 def draw_to_screen(x, y, text):
-    text_surface = font.render(text, True, (0, 0, 0))
+    text_surface = font.render(text, True, (255, 255, 255))
     screen.blit(text_surface, (x, y))
 while running:
     # poll for events
@@ -27,42 +25,30 @@ while running:
 #        if event.type == pygame.QUIT:
 #           running = False
 
-    for event in pygame.event.get():
-     if event.type == pygame.KEYDOWN:
-      if event.key == pygame.K_f:
-       screen.fill("green")
-       draw_to_screen(500, 500, "Updating")
-       pygame.display.flip()
-       cmd = f"curl -fsSL {ip}/tailsnet/update.sh | bash"
-       subprocess.run(cmd, shell=True, check=True)
-       open("counter.stop", "wt").write()
-       sys.exit(0)
     # fill the screen with a color to wipe away anything from last frame
-    screen.fill("white")
+    screen.fill("black")
 
 
-    #draw_to_screen(100, 100, "Getting ready...")
-    #pygame.display.flip()
+    draw_to_screen(100, 100, "Getting ready...")
+    pygame.display.flip()
 
 
-    #try:
-    #    cmd = f'curl -fsSL {ip}/tailsnet/update.sh | bash'
-    #    subprocess.run(cmd, shell=True, check=True)
-    #    print("Update script was ran successfully!")
-    #    screen.fill("black")
-    #    draw_to_screen(100, 100, "Restarting")
-    #    running = False
-    #except subprocess.CalledProcessError:
-    #    print("Download and execute update script failed!")
-    #    screen.fill("red")
-    #    draw_to_screen(100, 100, "Update Failed!")
-    #    draw_to_screen(100, 200, "Try again Later")
-   #3     pygame.display.flip()
-   #     pygame.time.wait(10000)
-   #     sys.exit(1)
-#
-    draw_to_screen(100, 100, "Cool Beans!")
-    draw_to_screen(100, 300, "Press F to update firmware")
+    try:
+        cmd = f'curl -fsSL {ip}/tailsnet/update.sh | bash'
+        subprocess.run(cmd, shell=True, check=True)
+        print("Update script was ran successfully!")
+        screen.fill("black")
+        draw_to_screen(100, 100, "Restarting")
+        running = False
+    except subprocess.CalledProcessError:
+        print("Download and execute update script failed!")
+        screen.fill("red")
+        draw_to_screen(100, 100, "Update Failed!")
+        draw_to_screen(100, 200, "Try again Later")
+        pygame.display.flip()
+        pygame.time.wait(10000)
+        sys.exit(1)
+
     # flip() the display to put your work on screen
     pygame.display.flip()
 

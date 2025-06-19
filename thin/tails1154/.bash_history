@@ -295,3 +295,247 @@ ls
 nano .xinitrc
 nano .bashrc
 exit
+ls
+scp -P 1699 .bashrc tails1154@192.168.0.107:/srv/http/tailsnet/bashrc
+ssh tails1154@192.168.0.107 -p 1699
+ls
+cd logs
+ls
+nano runner.log
+killall runner.sh
+ls
+cd ..
+ls
+killall runner.sh
+cd client
+ls
+cd ..
+cd scripts
+ls
+./initial.sh
+ls
+cd
+ls
+cd logs
+ls
+nano runner.log
+killall runner.sh
+ls
+cd
+ls
+nano runner.sh
+ks
+ls
+scp
+man scp
+ls
+sl
+ls
+l,s
+ls
+scp -r -P 1699 .* tails1154@104.56.60.214:/srv/http/tailsnet/thin/
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+ls
+cd scripts
+ls
+./initial.sh
+cd ..
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+ls
+killall runner.sh
+nano runner.sh
+ls
+nano logs/runner.log
+tail -f logs/runner.log
+ls
+touch counter.stop
+tail -f logs/runner.log
+ks
+kj
+ls
+nano runner.sh 
+killall runner.sh
+tail -f logs/runner.log
+touch counter.stop
+tail -f logs/runner.log
+ls
+nano .xinitrc
+killall runner.sh
+tail -f logs/runner.log
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+tail -f logs/runner.log
+ls
+tail -f logs/runner.log
+ls
+nano runner.sh 
+ls
+sl
+ls
+killall runner.sh
+tail -f logs/runner.log
+killall runner.sh
+sudo shutdown now
+startx
+ld
+ls
+ping google.com
+ls
+ip a
+sudo dhclient
+ping google.com
+nano .bashrc
+exit
+nano .bashrc
+exit
+nano .bashrc
+exit
+ls
+cd client
+ls
+cd assets
+ls
+file modem.mp3 
+aplay modem.mp3 
+ffmpeg
+ssh -p 1699 tails1154@192.168.0.107
+startx
+ls
+cd
+ls
+cd scripts/
+l
+ls
+./initial.sh
+cd
+startx
+ssh -p 1699 tails1154@192.168.0.107
+startx
+ls
+nano runner.sh 
+ls
+startx
+sudo alsamixer
+cat /proc/asound/cards
+sudo nano /etc/asound.conf
+ls
+cd client
+ls
+cd assets/
+ls
+aplay modem.wav
+sox
+ls
+ssh -p 1699 tails1154@192.168.0.107
+ls
+cd
+ls
+cd scripts
+./initial.sh
+cd
+startx
+ls
+cd client
+ls
+cd as
+cd assets/
+ls
+aplay modem.wav
+ls
+cd
+ls
+sudo amixer cset numid=3 1
+sudo amixer cset numid=3 2
+amixer cset numid=3 2
+amixer cset numid=3 1
+sudo apt install pulseaudio -y && nano runner.sh
+sudo pulseaudio --start
+pulseaudio --start
+ls
+startx
+ssh -p 1699 tails1154@192.168.0.107
+ls
+cd scripts/
+./initial.sh
+cd
+startx
+ls
+killall runner.sh
+lls
+killall runner.sh
+ls
+sudo reboot now
+startx
+ls
+pulseaudio --start
+startx
+sudo nano /etc/motd
+exit
+ls
+nano runner.sh 
+startx
+ls
+cd scripts/
+ls
+cd ..
+rm -rf counter.stop 
+ls
+cd scripts/
+ls
+cd ..
+cd logs
+ls
+nano runner.log
+nano x.log
+ls
+nano firmware.log 
+ls
+nano runner.log 
+ls
+cd ..
+ls
+startx
+cd scripts/
+ls
+./initial.sh 
+cd
+startx
+ls /home/tails1154/client
+ls /home/tails1154/client/assets
+ls
+cd scripts/
+./initial.sh 
+exit
+ls
+startx
+ls
+startx
+ls
+cd scripts
+ls
+./initial.sh
+ls
+cd ..
+ls
+exit
+ls
+cd scripts/
+l
+ls
+./initial.sh 
+cd
+exit
+pip install pywebview --break-system-packages
+ls
+nano ~/.bashrc
+source ~/.bashrc
+nano ~/.bashrc
+source ~/.bashrc
+exit
+startx
+ls
+cd scripts
+ls
+./initial.sh 
+cd
+startx
+exit

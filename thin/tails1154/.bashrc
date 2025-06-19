@@ -115,6 +115,7 @@ fi
 #./runner.sh
 clear
 echo "Loading..."
+export PATH=$PATH:/home/tails1154/.local/bin
 stty_orig=$(stty -g)
 stty -icanon -echo min 0 time 20
 
@@ -140,6 +141,7 @@ else
 		echo "Please setup wifi."
 		sleep 1
 		nmtui
+		sudo dhclient
 		echo "Relaunching..."
 		exit 0
 	fi

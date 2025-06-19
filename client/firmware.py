@@ -23,7 +23,8 @@ modem = pygame.mixer.Sound("/home/tails1154/client/assets/modem.wav")
 def draw_to_screen(x, y, text):
     text_surface = font.render(text, True, (0, 0, 0))
     screen.blit(text_surface, (x, y))
-
+def on_loaded():
+    pygame.mixer.music.stop()
 running = True
 while running:
     for event in pygame.event.get():
@@ -68,10 +69,12 @@ while running:
                         connected = True
                         break
                 proxy_url = requests.get(f"{ip}:3000/api/proxy?ssid={ssid}").text
-                proxy_url = "http://192.168.0.107:8080/"
+                proxy_url = f"http://192.168.0.107:8080/?ssid={ssid}"
 ##                final_url = f"{proxy_url}?ssid={ssid}"
                 os.environ["http_proxy"] = proxy_url
-                webview.create_window("TailsNet Proxy", "http://example.com", width=1280, height=720)
+                window = webview.create_window("TailsNet Proxy", "http://example.com", width=1280, height=720)
+                window.events.loaded += on_loaded
+#                pygame.mixer.music.stop()
                 webview.start()
                 pygame.mixer.music.stop()
 
