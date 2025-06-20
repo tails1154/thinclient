@@ -1,0 +1,23 @@
+<html>
+  <head>
+     <meta http-equiv='refresh'  content='6; URL=http://192.168.0.107/tailsnet/assets/home.html'>
+  </head>
+  <body>
+    <center><h1>TailsNet</h1></center>
+    <script>
+
+      // document.location.href = "http://192.168.0.107/tailsnet/assets/home.html";
+      async function timeout() {
+        try {
+          pywebview.api.play_splash().then(function(response) {
+        });
+  //        document.location.href = "http://192.168.0.107/tailsnet/assets/home.html";
+        } catch (e) {
+	  document.write("error:" + e + "<a href='javascript:window.location.reload()'>reload</a>");
+          console.error("Error playing sound", e);
+        }
+      }
+      setTimeout(timeout, 1000);
+    </script>
+  </body>
+</html>

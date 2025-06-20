@@ -1,36 +1,36 @@
-[    33.441] 
+[  1486.921] 
 X.Org X Server 1.21.1.7
 X Protocol Version 11, Revision 0
-[    33.442] Current Operating System: Linux tailsnet 6.12.25+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.12.25-1+rpt1 (2025-04-30) aarch64
-[    33.442] Kernel command line: coherent_pool=1M 8250.nr_uarts=0 snd_bcm2835.enable_headphones=0 cgroup_disable=memory snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_hdmi=0  vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  console=ttyS0,115200 console=tty1 root=PARTUUID=69d523e5-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=US quiet splash
-[    33.442] xorg-server 2:21.1.7-3+rpt3+deb12u9 (https://www.debian.org/support) 
-[    33.442] Current version of pixman: 0.44.0
-[    33.443] 	Before reporting problems, check http://wiki.x.org
+[  1486.936] Current Operating System: Linux tailsnet 6.12.25+rpt-rpi-v8 #1 SMP PREEMPT Debian 1:6.12.25-1+rpt1 (2025-04-30) aarch64
+[  1486.937] Kernel command line: coherent_pool=1M 8250.nr_uarts=0 snd_bcm2835.enable_headphones=0 cgroup_disable=memory snd_bcm2835.enable_headphones=1 snd_bcm2835.enable_hdmi=1 snd_bcm2835.enable_hdmi=0  vc_mem.mem_base=0x3ec00000 vc_mem.mem_size=0x40000000  console=ttyS0,115200 console=tty1 root=PARTUUID=69d523e5-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=US quiet splash
+[  1486.953] xorg-server 2:21.1.7-3+rpt3+deb12u9 (https://www.debian.org/support) 
+[  1486.959] Current version of pixman: 0.44.0
+[  1486.970] 	Before reporting problems, check http://wiki.x.org
 	to make sure that you have the latest version.
-[    33.443] Markers: (--) probed, (**) from config file, (==) default setting,
+[  1486.970] Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-[    33.443] (==) Log file: "/home/tails1154/.local/share/xorg/Xorg.1.log", Time: Thu Jun 19 00:08:48 2025
-[    33.444] (==) Using config directory: "/etc/X11/xorg.conf.d"
-[    33.444] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
-[    33.445] (==) No Layout section.  Using the first Screen section.
-[    33.445] (==) No screen section available. Using defaults.
-[    33.445] (**) |-->Screen "Default Screen Section" (0)
-[    33.445] (**) |   |-->Monitor "<default monitor>"
-[    33.446] (==) No device specified for screen "Default Screen Section".
+[  1486.993] (==) Log file: "/home/tails1154/.local/share/xorg/Xorg.1.log", Time: Fri Jun 20 12:55:48 2025
+[  1487.011] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[  1487.017] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  1487.024] (==) No Layout section.  Using the first Screen section.
+[  1487.024] (==) No screen section available. Using defaults.
+[  1487.024] (**) |-->Screen "Default Screen Section" (0)
+[  1487.024] (**) |   |-->Monitor "<default monitor>"
+[  1487.028] (==) No device specified for screen "Default Screen Section".
 	Using the first device section listed.
-[    33.446] (**) |   |-->Device "kms"
-[    33.446] (==) No monitor specified for screen "Default Screen Section".
+[  1487.028] (**) |   |-->Device "kms"
+[  1487.028] (==) No monitor specified for screen "Default Screen Section".
 	Using a default monitor configuration.
-[    33.446] (**) Option "Debug" "dmabuf_capable"
-[    33.446] (==) Automatically adding devices
-[    33.446] (==) Automatically enabling devices
-[    33.446] (==) Automatically adding GPU devices
-[    33.446] (==) Automatically binding GPU devices
-[    33.446] (==) Max clients allowed: 256, resource mask: 0x1fffff
-[    33.446] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
-[    33.446] 	Entry deleted from font path.
-[    33.447] (==) FontPath set to:
+[  1487.028] (**) Option "Debug" "dmabuf_capable"
+[  1487.028] (==) Automatically adding devices
+[  1487.028] (==) Automatically enabling devices
+[  1487.028] (==) Automatically adding GPU devices
+[  1487.028] (==) Automatically binding GPU devices
+[  1487.030] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[  1487.049] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[  1487.049] 	Entry deleted from font path.
+[  1487.051] (==) FontPath set to:
 	/usr/share/fonts/X11/misc,
 	/usr/share/fonts/X11/100dpi/:unscaled,
 	/usr/share/fonts/X11/75dpi/:unscaled,
@@ -38,329 +38,453 @@ X Protocol Version 11, Revision 0
 	/usr/share/fonts/X11/100dpi,
 	/usr/share/fonts/X11/75dpi,
 	built-ins
-[    33.447] (==) ModulePath set to "/usr/lib/xorg/modules"
-[    33.447] (II) The server relies on udev to provide the list of input devices.
+[  1487.052] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  1487.052] (II) The server relies on udev to provide the list of input devices.
 	If no devices become available, reconfigure udev or disable AutoAddDevices.
-[    33.447] (II) Loader magic: 0x558ccf0ef0
-[    33.447] (II) Module ABI versions:
-[    33.447] 	X.Org ANSI C Emulation: 0.4
-[    33.447] 	X.Org Video Driver: 25.2
-[    33.447] 	X.Org XInput driver : 24.4
-[    33.447] 	X.Org Server Extension : 10.0
-[    33.450] (++) using VT number 2
+[  1487.052] (II) Loader magic: 0x558fcb0ef0
+[  1487.052] (II) Module ABI versions:
+[  1487.052] 	X.Org ANSI C Emulation: 0.4
+[  1487.052] 	X.Org Video Driver: 25.2
+[  1487.052] 	X.Org XInput driver : 24.4
+[  1487.052] 	X.Org Server Extension : 10.0
+[  1487.057] (++) using VT number 3
 
-[    33.458] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_33
-[    33.460] (II) xfree86: Adding drm device (/dev/dri/card0)
-[    33.460] (II) Platform probe for /sys/devices/platform/soc/soc:gpu/drm/card0
-[    33.464] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 13 paused 0
-[    33.465] (**) OutputClass "vc4" setting /dev/dri/card0 as PrimaryGPU
-[    33.465] (II) LoadModule: "glx"
-[    33.465] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
-[    33.470] (II) Module glx: vendor="X.Org Foundation"
-[    33.471] 	compiled for 1.21.1.7, module version = 1.0.0
-[    33.471] 	ABI class: X.Org Server Extension, version 10.0
-[    33.471] (II) LoadModule: "modesetting"
-[    33.471] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
-[    33.618] (II) Module modesetting: vendor="X.Org Foundation"
-[    33.618] 	compiled for 1.21.1.7, module version = 1.21.1
-[    33.618] 	Module class: X.Org Video Driver
-[    33.618] 	ABI class: X.Org Video Driver, version 25.2
-[    33.618] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
-[    33.618] (II) modeset(0): using drv /dev/dri/card0
-[    33.618] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
-[    33.618] (II) modeset(0): Creating default Display subsection in Screen section
+[  1487.072] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_35
+[  1487.078] (II) xfree86: Adding drm device (/dev/dri/card0)
+[  1487.079] (II) Platform probe for /sys/devices/platform/soc/soc:gpu/drm/card0
+[  1487.083] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 13 paused 0
+[  1487.085] (**) OutputClass "vc4" setting /dev/dri/card0 as PrimaryGPU
+[  1487.085] (II) LoadModule: "glx"
+[  1487.092] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  1487.126] (II) Module glx: vendor="X.Org Foundation"
+[  1487.126] 	compiled for 1.21.1.7, module version = 1.0.0
+[  1487.126] 	ABI class: X.Org Server Extension, version 10.0
+[  1487.126] (II) LoadModule: "modesetting"
+[  1487.127] (II) Loading /usr/lib/xorg/modules/drivers/modesetting_drv.so
+[  1487.620] (II) Module modesetting: vendor="X.Org Foundation"
+[  1487.621] 	compiled for 1.21.1.7, module version = 1.21.1
+[  1487.621] 	Module class: X.Org Video Driver
+[  1487.621] 	ABI class: X.Org Video Driver, version 25.2
+[  1487.621] (II) modesetting: Driver for Modesetting Kernel Drivers: kms
+[  1487.622] (II) modeset(0): using drv /dev/dri/card0
+[  1487.622] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  1487.622] (II) modeset(0): Creating default Display subsection in Screen section
 	"Default Screen Section" for depth/fbbpp 24/32
-[    33.618] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
-[    33.618] (II) Applying OutputClass "vc4" options to /dev/dri/card0
-[    33.619] (**) modeset(0): Option "AccelMethod" "msdri3"
-[    33.619] (**) modeset(0): Option "UseGammaLUT" "off"
-[    33.619] (==) modeset(0): RGB weight 888
-[    33.619] (==) modeset(0): Default visual is TrueColor
-[    33.619] (**) modeset(0): glamor disabled
-[    33.650] (II) modeset(0): DRI3 initialized
-[    33.650] (==) modeset(0): VariableRefresh: disabled
-[    33.650] (==) modeset(0): AsyncFlipSecondaries: disabled
-[    33.702] (II) modeset(0): Output HDMI-1 has no monitor section
-[    33.764] (II) modeset(0): EDID for output HDMI-1
-[    33.764] (II) modeset(0): Manufacturer: ACI  Model: 23f2  Serial#: 137781
-[    33.764] (II) modeset(0): Year: 2010  Week: 34
-[    33.764] (II) modeset(0): EDID Version: 1.3
-[    33.764] (II) modeset(0): Digital Display Input
-[    33.764] (II) modeset(0): Max Image Size [cm]: horiz.: 52  vert.: 29
-[    33.764] (II) modeset(0): Gamma: 2.20
-[    33.764] (II) modeset(0): DPMS capabilities: Off
-[    33.764] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
-[    33.764] (II) modeset(0): First detailed timing is preferred mode
-[    33.764] (II) modeset(0): redX: 0.644 redY: 0.332   greenX: 0.286 greenY: 0.601
-[    33.764] (II) modeset(0): blueX: 0.152 blueY: 0.076   whiteX: 0.312 whiteY: 0.328
-[    33.764] (II) modeset(0): Supported established timings:
-[    33.764] (II) modeset(0): 720x400@70Hz
-[    33.764] (II) modeset(0): 640x480@60Hz
-[    33.764] (II) modeset(0): 640x480@67Hz
-[    33.764] (II) modeset(0): 640x480@72Hz
-[    33.764] (II) modeset(0): 640x480@75Hz
-[    33.764] (II) modeset(0): 800x600@56Hz
-[    33.764] (II) modeset(0): 800x600@60Hz
-[    33.764] (II) modeset(0): 800x600@72Hz
-[    33.764] (II) modeset(0): 800x600@75Hz
-[    33.764] (II) modeset(0): 832x624@75Hz
-[    33.764] (II) modeset(0): 1024x768@60Hz
-[    33.764] (II) modeset(0): 1024x768@70Hz
-[    33.764] (II) modeset(0): 1024x768@75Hz
-[    33.764] (II) modeset(0): 1280x1024@75Hz
-[    33.764] (II) modeset(0): Manufacturer's mask: 0
-[    33.764] (II) modeset(0): Supported standard timings:
-[    33.764] (II) modeset(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
-[    33.764] (II) modeset(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
-[    33.764] (II) modeset(0): #2: hsize: 1440  vsize 900  refresh: 60  vid: 149
-[    33.764] (II) modeset(0): #3: hsize: 1680  vsize 1050  refresh: 60  vid: 179
-[    33.764] (II) modeset(0): #4: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
-[    33.765] (II) modeset(0): Supported detailed timing:
-[    33.765] (II) modeset(0): clock: 148.5 MHz   Image Size:  521 x 293 mm
-[    33.765] (II) modeset(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
-[    33.765] (II) modeset(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
-[    33.765] (II) modeset(0): Serial No: A8LMTF137781
-[    33.765] (II) modeset(0): Ranges: V min: 55 V max: 75 Hz, H min: 30 H max: 85 kHz, PixClock max 165 MHz
-[    33.765] (II) modeset(0): Monitor name: ASUS VH236H
-[    33.765] (II) modeset(0): Supported detailed timing:
-[    33.765] (II) modeset(0): clock: 27.0 MHz   Image Size:  521 x 293 mm
-[    33.765] (II) modeset(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
-[    33.765] (II) modeset(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
-[    33.765] (II) modeset(0): Supported detailed timing:
-[    33.765] (II) modeset(0): clock: 74.2 MHz   Image Size:  521 x 293 mm
-[    33.765] (II) modeset(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
-[    33.765] (II) modeset(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
-[    33.765] (II) modeset(0): Supported detailed timing:
-[    33.765] (II) modeset(0): clock: 74.2 MHz   Image Size:  521 x 293 mm
-[    33.765] (II) modeset(0): h_active: 1280  h_sync: 1720  h_sync_end 1760 h_blank_end 1980 h_border: 0
-[    33.765] (II) modeset(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
-[    33.765] (II) modeset(0): Supported detailed timing:
-[    33.765] (II) modeset(0): clock: 27.0 MHz   Image Size:  521 x 293 mm
-[    33.765] (II) modeset(0): h_active: 720  h_sync: 732  h_sync_end 796 h_blank_end 864 h_border: 0
-[    33.765] (II) modeset(0): v_active: 576  v_sync: 581  v_sync_end 586 v_blanking: 625 v_border: 0
-[    33.765] (II) modeset(0): Number of EDID sections to follow: 1
-[    33.765] (II) modeset(0): EDID (in hex):
-[    33.765] (II) modeset(0): 	00ffffffffffff000469f223351a0200
-[    33.765] (II) modeset(0): 	2214010380341d782ac720a455499927
-[    33.765] (II) modeset(0): 	135054bfef00714f81809500b300d1c0
-[    33.765] (II) modeset(0): 	010101010101023a801871382d40582c
-[    33.765] (II) modeset(0): 	450009252100001e000000ff0041384c
-[    33.765] (II) modeset(0): 	4d54463133373738310a000000fd0037
-[    33.765] (II) modeset(0): 	4b1e5510000a202020202020000000fc
-[    33.765] (II) modeset(0): 	0041535553205648323336480a2001b8
-[    33.765] (II) modeset(0): 	020322714f0102031112130414050e0f
-[    33.765] (II) modeset(0): 	1d1e1f10230907018301000065030c00
-[    33.765] (II) modeset(0): 	10008c0ad08a20e02d10103e96000925
-[    33.765] (II) modeset(0): 	21000018011d007251d01e206e285500
-[    33.765] (II) modeset(0): 	09252100001e011d00bc52d01e20b828
-[    33.765] (II) modeset(0): 	554009252100001e8c0ad09020403120
-[    33.765] (II) modeset(0): 	0c405500092521000018000000000000
-[    33.765] (II) modeset(0): 	00000000000000000000000000000073
-[    33.766] (II) modeset(0): Printing probed modes for output HDMI-1
-[    33.766] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
-[    33.766] (II) modeset(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
-[    33.766] (II) modeset(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
-[    33.766] (II) modeset(0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
-[    33.766] (II) modeset(0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
-[    33.766] (II) modeset(0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
-[    33.766] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
-[    33.766] (II) modeset(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
-[    33.766] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
-[    33.766] (II) modeset(0): Modeline "1440x900"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
-[    33.766] (II) modeset(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
-[    33.766] (II) modeset(0): Modeline "1440x576"x50.0   54.00  1440 1464 1592 1728  576 581 586 625 -hsync -vsync (31.2 kHz e)
-[    33.766] (II) modeset(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
-[    33.766] (II) modeset(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
-[    33.766] (II) modeset(0): Modeline "1440x480"x60.0   54.05  1440 1472 1596 1716  480 489 495 525 -hsync -vsync (31.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "1440x480"x59.9   54.00  1440 1472 1596 1716  480 489 495 525 -hsync -vsync (31.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "832x624"x74.6   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
-[    33.766] (II) modeset(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
-[    33.766] (II) modeset(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
-[    33.766] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
-[    33.766] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
-[    33.766] (II) modeset(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
-[    33.766] (II) modeset(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
-[    33.766] (II) modeset(0): Modeline "640x480"x66.7   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
-[    33.766] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
-[    33.766] (II) modeset(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
-[    33.767] (II) modeset(0): Output HDMI-1 connected
-[    33.767] (II) modeset(0): Using exact sizes for initial modes
-[    33.767] (II) modeset(0): Output HDMI-1 using initial mode 1920x1080 +0+0
-[    33.767] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
-[    33.767] (==) modeset(0): DPI set to (96, 96)
-[    33.767] (II) Loading sub module "fb"
-[    33.767] (II) LoadModule: "fb"
-[    33.767] (II) Module "fb" already built-in
-[    33.779] (==) modeset(0): Backing store enabled
-[    33.779] (==) modeset(0): Silken mouse enabled
-[    33.909] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
-[    33.909] (==) modeset(0): DPMS enabled
-[    33.909] (WW) modeset(0): Option "PrimaryGPU" is not used
-[    33.909] (II) Initializing extension Generic Event Extension
-[    33.910] (II) Initializing extension SHAPE
-[    33.911] (II) Initializing extension MIT-SHM
-[    33.911] (II) Initializing extension XInputExtension
-[    33.912] (II) Initializing extension XTEST
-[    33.918] (II) Initializing extension BIG-REQUESTS
-[    33.918] (II) Initializing extension SYNC
-[    33.919] (II) Initializing extension XKEYBOARD
-[    33.920] (II) Initializing extension XC-MISC
-[    33.920] (II) Initializing extension SECURITY
-[    33.921] (II) Initializing extension XFIXES
-[    33.922] (II) Initializing extension RENDER
-[    33.922] (II) Initializing extension RANDR
-[    33.923] (II) Initializing extension COMPOSITE
-[    33.924] (II) Initializing extension DAMAGE
-[    33.925] (II) Initializing extension MIT-SCREEN-SAVER
-[    33.925] (II) Initializing extension DOUBLE-BUFFER
-[    33.926] (II) Initializing extension RECORD
-[    33.926] (II) Initializing extension DPMS
-[    33.927] (II) Initializing extension Present
-[    33.928] (II) Initializing extension DRI3
-[    33.928] (II) Initializing extension X-Resource
-[    33.929] (II) Initializing extension XVideo
-[    33.929] (II) Initializing extension XVideo-MotionCompensation
-[    33.930] (II) Initializing extension SELinux
-[    33.930] (II) SELinux: Disabled on system
-[    33.930] (II) Initializing extension GLX
-[    33.930] (II) AIGLX: Screen 0 is not DRI2 capable
-[    33.973] (II) IGLX: Loaded and initialized swrast
-[    33.973] (II) GLX: Initialized DRISWRAST GL provider for screen 0
-[    33.973] (II) Initializing extension XFree86-VidModeExtension
-[    33.973] (II) Initializing extension XFree86-DGA
-[    33.974] (II) Initializing extension XFree86-DRI
-[    33.974] (II) Initializing extension DRI2
-[    33.975] (II) modeset(0): Damage tracking initialized
-[    33.975] (II) modeset(0): Setting screen physical size to 508 x 285
-[    34.177] (II) config/udev: Adding input device vc4-hdmi (/dev/input/event3)
-[    34.177] (**) vc4-hdmi: Applying InputClass "libinput keyboard catchall"
-[    34.177] (II) LoadModule: "libinput"
-[    34.177] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
-[    34.186] (II) Module libinput: vendor="X.Org Foundation"
-[    34.186] 	compiled for 1.21.1.3, module version = 1.2.1
-[    34.186] 	Module class: X.Org XInput Driver
-[    34.186] 	ABI class: X.Org XInput driver, version 24.4
-[    34.186] (II) Using input driver 'libinput' for 'vc4-hdmi'
-[    34.189] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 23 paused 0
-[    34.189] (**) vc4-hdmi: always reports core events
-[    34.189] (**) Option "Device" "/dev/input/event3"
-[    34.199] (II) event3  - vc4-hdmi: is tagged by udev as: Keyboard Pointingstick
-[    34.200] (II) event3  - vc4-hdmi: device is a pointer
-[    34.200] (II) event3  - vc4-hdmi: device is a keyboard
-[    34.201] (II) event3  - vc4-hdmi: device removed
-[    34.201] (II) libinput: vc4-hdmi: needs a virtual subdevice
-[    34.202] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f902000.hdmi/rc/rc0/input3/event3"
-[    34.202] (II) XINPUT: Adding extended input device "vc4-hdmi" (type: MOUSE, id 6)
-[    34.202] (**) Option "AccelerationScheme" "none"
-[    34.203] (**) vc4-hdmi: (accel) selected scheme none/0
-[    34.203] (**) vc4-hdmi: (accel) acceleration factor: 2.000
-[    34.203] (**) vc4-hdmi: (accel) acceleration threshold: 4
-[    34.206] (II) event3  - vc4-hdmi: is tagged by udev as: Keyboard Pointingstick
-[    34.207] (II) event3  - vc4-hdmi: device is a pointer
-[    34.207] (II) event3  - vc4-hdmi: device is a keyboard
-[    34.209] (II) config/udev: Adding input device vc4-hdmi HDMI Jack (/dev/input/event4)
-[    34.209] (II) No input driver specified, ignoring this device.
-[    34.209] (II) This device may have been added with another device file.
-[    34.213] (II) config/udev: Adding input device Dell KB216 Wired Keyboard (/dev/input/event0)
-[    34.213] (**) Dell KB216 Wired Keyboard: Applying InputClass "libinput keyboard catchall"
-[    34.213] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard'
-[    34.216] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 26 paused 0
-[    34.216] (**) Dell KB216 Wired Keyboard: always reports core events
-[    34.217] (**) Option "Device" "/dev/input/event0"
-[    34.223] (II) event0  - Dell KB216 Wired Keyboard: is tagged by udev as: Keyboard
-[    34.223] (II) event0  - Dell KB216 Wired Keyboard: device is a keyboard
-[    34.224] (II) event0  - Dell KB216 Wired Keyboard: device removed
-[    34.225] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.0/0003:413C:2113.0001/input/input0/event0"
-[    34.225] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard" (type: KEYBOARD, id 7)
-[    34.225] (**) Option "xkb_model" "pc105"
-[    34.225] (**) Option "xkb_layout" "us"
-[    34.232] (II) event0  - Dell KB216 Wired Keyboard: is tagged by udev as: Keyboard
-[    34.232] (II) event0  - Dell KB216 Wired Keyboard: device is a keyboard
-[    34.236] (II) config/udev: Adding input device Dell KB216 Wired Keyboard System Control (/dev/input/event1)
-[    34.236] (**) Dell KB216 Wired Keyboard System Control: Applying InputClass "libinput keyboard catchall"
-[    34.236] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard System Control'
-[    34.240] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 27 paused 0
-[    34.240] (**) Dell KB216 Wired Keyboard System Control: always reports core events
-[    34.240] (**) Option "Device" "/dev/input/event1"
-[    34.246] (II) event1  - Dell KB216 Wired Keyboard System Control: is tagged by udev as: Keyboard
-[    34.247] (II) event1  - Dell KB216 Wired Keyboard System Control: device is a keyboard
-[    34.247] (II) event1  - Dell KB216 Wired Keyboard System Control: device removed
-[    34.247] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.1/0003:413C:2113.0002/input/input1/event1"
-[    34.248] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard System Control" (type: KEYBOARD, id 8)
-[    34.248] (**) Option "xkb_model" "pc105"
-[    34.248] (**) Option "xkb_layout" "us"
-[    34.254] (II) event1  - Dell KB216 Wired Keyboard System Control: is tagged by udev as: Keyboard
-[    34.255] (II) event1  - Dell KB216 Wired Keyboard System Control: device is a keyboard
-[    34.259] (II) config/udev: Adding input device Dell KB216 Wired Keyboard Consumer Control (/dev/input/event2)
-[    34.259] (**) Dell KB216 Wired Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
-[    34.259] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard Consumer Control'
-[    34.263] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 28 paused 0
-[    34.263] (**) Dell KB216 Wired Keyboard Consumer Control: always reports core events
-[    34.263] (**) Option "Device" "/dev/input/event2"
-[    34.270] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: is tagged by udev as: Keyboard
-[    34.270] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device is a keyboard
-[    34.271] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device removed
-[    34.271] (II) libinput: Dell KB216 Wired Keyboard Consumer Control: needs a virtual subdevice
-[    34.271] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.1/0003:413C:2113.0002/input/input2/event2"
-[    34.271] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard Consumer Control" (type: MOUSE, id 9)
-[    34.272] (**) Option "AccelerationScheme" "none"
-[    34.272] (**) Dell KB216 Wired Keyboard Consumer Control: (accel) selected scheme none/0
-[    34.272] (**) Dell KB216 Wired Keyboard Consumer Control: (accel) acceleration factor: 2.000
-[    34.272] (**) Dell KB216 Wired Keyboard Consumer Control: (accel) acceleration threshold: 4
-[    34.278] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: is tagged by udev as: Keyboard
-[    34.278] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device is a keyboard
-[    34.296] (**) vc4-hdmi: Applying InputClass "libinput keyboard catchall"
-[    34.296] (II) Using input driver 'libinput' for 'vc4-hdmi'
-[    34.296] (II) systemd-logind: returning pre-existing fd for /dev/input/event3 13:67
-[    34.297] (**) vc4-hdmi: always reports core events
-[    34.297] (**) Option "Device" "/dev/input/event3"
-[    34.297] (II) libinput: vc4-hdmi: is a virtual subdevice
-[    34.297] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f902000.hdmi/rc/rc0/input3/event3"
-[    34.297] (II) XINPUT: Adding extended input device "vc4-hdmi" (type: KEYBOARD, id 10)
-[    34.297] (**) Option "xkb_model" "pc105"
-[    34.297] (**) Option "xkb_layout" "us"
-[    34.298] (**) Dell KB216 Wired Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
-[    34.298] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard Consumer Control'
-[    34.298] (II) systemd-logind: returning pre-existing fd for /dev/input/event2 13:66
-[    34.298] (**) Dell KB216 Wired Keyboard Consumer Control: always reports core events
-[    34.298] (**) Option "Device" "/dev/input/event2"
-[    34.298] (II) libinput: Dell KB216 Wired Keyboard Consumer Control: is a virtual subdevice
-[    34.298] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.1/0003:413C:2113.0002/input/input2/event2"
-[    34.298] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard Consumer Control" (type: KEYBOARD, id 11)
-[    34.298] (**) Option "xkb_model" "pc105"
-[    34.298] (**) Option "xkb_layout" "us"
-[    35.287] (**) Option "fd" "23"
-[    35.288] (**) Option "fd" "26"
-[    35.288] (II) event0  - Dell KB216 Wired Keyboard: device removed
-[    35.289] (**) Option "fd" "27"
-[    35.289] (II) event1  - Dell KB216 Wired Keyboard System Control: device removed
-[    35.289] (**) Option "fd" "28"
-[    35.290] (**) Option "fd" "23"
-[    35.290] (II) event3  - vc4-hdmi: device removed
-[    35.291] (**) Option "fd" "28"
-[    35.291] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device removed
-[    35.357] (II) systemd-logind: got pause for 13:64
-[    35.357] (II) systemd-logind: got pause for 13:66
-[    35.357] (II) systemd-logind: got pause for 13:67
-[    35.357] (II) systemd-logind: got pause for 13:65
-[    35.384] (II) UnloadModule: "libinput"
-[    35.384] (II) systemd-logind: not releasing fd for 13:66, still in use
-[    35.385] (II) UnloadModule: "libinput"
-[    35.385] (II) systemd-logind: not releasing fd for 13:67, still in use
-[    35.385] (II) UnloadModule: "libinput"
-[    35.385] (II) systemd-logind: releasing fd for 13:66
-[    35.414] (II) UnloadModule: "libinput"
-[    35.414] (II) systemd-logind: releasing fd for 13:65
-[    35.454] (II) UnloadModule: "libinput"
-[    35.454] (II) systemd-logind: releasing fd for 13:64
-[    35.495] (II) UnloadModule: "libinput"
-[    35.495] (II) systemd-logind: releasing fd for 13:67
-[    35.535] (II) Server terminated successfully (0). Closing log file.
+[  1487.622] (==) modeset(0): Depth 24, (==) framebuffer bpp 32
+[  1487.622] (II) Applying OutputClass "vc4" options to /dev/dri/card0
+[  1487.622] (**) modeset(0): Option "AccelMethod" "msdri3"
+[  1487.622] (**) modeset(0): Option "UseGammaLUT" "off"
+[  1487.622] (==) modeset(0): RGB weight 888
+[  1487.622] (==) modeset(0): Default visual is TrueColor
+[  1487.622] (**) modeset(0): glamor disabled
+[  1487.688] (II) modeset(0): DRI3 initialized
+[  1487.688] (==) modeset(0): VariableRefresh: disabled
+[  1487.688] (==) modeset(0): AsyncFlipSecondaries: disabled
+[  1487.773] (II) modeset(0): Output HDMI-1 has no monitor section
+[  1487.878] (II) modeset(0): EDID for output HDMI-1
+[  1487.878] (II) modeset(0): Manufacturer: ACI  Model: 23f2  Serial#: 137781
+[  1487.878] (II) modeset(0): Year: 2010  Week: 34
+[  1487.878] (II) modeset(0): EDID Version: 1.3
+[  1487.878] (II) modeset(0): Digital Display Input
+[  1487.878] (II) modeset(0): Max Image Size [cm]: horiz.: 52  vert.: 29
+[  1487.878] (II) modeset(0): Gamma: 2.20
+[  1487.878] (II) modeset(0): DPMS capabilities: Off
+[  1487.878] (II) modeset(0): Supported color encodings: RGB 4:4:4 YCrCb 4:4:4 
+[  1487.878] (II) modeset(0): First detailed timing is preferred mode
+[  1487.878] (II) modeset(0): redX: 0.644 redY: 0.332   greenX: 0.286 greenY: 0.601
+[  1487.878] (II) modeset(0): blueX: 0.152 blueY: 0.076   whiteX: 0.312 whiteY: 0.328
+[  1487.878] (II) modeset(0): Supported established timings:
+[  1487.878] (II) modeset(0): 720x400@70Hz
+[  1487.878] (II) modeset(0): 640x480@60Hz
+[  1487.878] (II) modeset(0): 640x480@67Hz
+[  1487.878] (II) modeset(0): 640x480@72Hz
+[  1487.878] (II) modeset(0): 640x480@75Hz
+[  1487.878] (II) modeset(0): 800x600@56Hz
+[  1487.878] (II) modeset(0): 800x600@60Hz
+[  1487.878] (II) modeset(0): 800x600@72Hz
+[  1487.879] (II) modeset(0): 800x600@75Hz
+[  1487.879] (II) modeset(0): 832x624@75Hz
+[  1487.879] (II) modeset(0): 1024x768@60Hz
+[  1487.879] (II) modeset(0): 1024x768@70Hz
+[  1487.879] (II) modeset(0): 1024x768@75Hz
+[  1487.879] (II) modeset(0): 1280x1024@75Hz
+[  1487.879] (II) modeset(0): Manufacturer's mask: 0
+[  1487.879] (II) modeset(0): Supported standard timings:
+[  1487.879] (II) modeset(0): #0: hsize: 1152  vsize 864  refresh: 75  vid: 20337
+[  1487.879] (II) modeset(0): #1: hsize: 1280  vsize 1024  refresh: 60  vid: 32897
+[  1487.879] (II) modeset(0): #2: hsize: 1440  vsize 900  refresh: 60  vid: 149
+[  1487.879] (II) modeset(0): #3: hsize: 1680  vsize 1050  refresh: 60  vid: 179
+[  1487.879] (II) modeset(0): #4: hsize: 1920  vsize 1080  refresh: 60  vid: 49361
+[  1487.879] (II) modeset(0): Supported detailed timing:
+[  1487.879] (II) modeset(0): clock: 148.5 MHz   Image Size:  521 x 293 mm
+[  1487.879] (II) modeset(0): h_active: 1920  h_sync: 2008  h_sync_end 2052 h_blank_end 2200 h_border: 0
+[  1487.879] (II) modeset(0): v_active: 1080  v_sync: 1084  v_sync_end 1089 v_blanking: 1125 v_border: 0
+[  1487.879] (II) modeset(0): Serial No: A8LMTF137781
+[  1487.879] (II) modeset(0): Ranges: V min: 55 V max: 75 Hz, H min: 30 H max: 85 kHz, PixClock max 165 MHz
+[  1487.879] (II) modeset(0): Monitor name: ASUS VH236H
+[  1487.879] (II) modeset(0): Supported detailed timing:
+[  1487.879] (II) modeset(0): clock: 27.0 MHz   Image Size:  521 x 293 mm
+[  1487.879] (II) modeset(0): h_active: 720  h_sync: 736  h_sync_end 798 h_blank_end 858 h_border: 0
+[  1487.879] (II) modeset(0): v_active: 480  v_sync: 489  v_sync_end 495 v_blanking: 525 v_border: 0
+[  1487.879] (II) modeset(0): Supported detailed timing:
+[  1487.879] (II) modeset(0): clock: 74.2 MHz   Image Size:  521 x 293 mm
+[  1487.879] (II) modeset(0): h_active: 1280  h_sync: 1390  h_sync_end 1430 h_blank_end 1650 h_border: 0
+[  1487.879] (II) modeset(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[  1487.879] (II) modeset(0): Supported detailed timing:
+[  1487.880] (II) modeset(0): clock: 74.2 MHz   Image Size:  521 x 293 mm
+[  1487.880] (II) modeset(0): h_active: 1280  h_sync: 1720  h_sync_end 1760 h_blank_end 1980 h_border: 0
+[  1487.880] (II) modeset(0): v_active: 720  v_sync: 725  v_sync_end 730 v_blanking: 750 v_border: 0
+[  1487.880] (II) modeset(0): Supported detailed timing:
+[  1487.880] (II) modeset(0): clock: 27.0 MHz   Image Size:  521 x 293 mm
+[  1487.880] (II) modeset(0): h_active: 720  h_sync: 732  h_sync_end 796 h_blank_end 864 h_border: 0
+[  1487.880] (II) modeset(0): v_active: 576  v_sync: 581  v_sync_end 586 v_blanking: 625 v_border: 0
+[  1487.880] (II) modeset(0): Number of EDID sections to follow: 1
+[  1487.880] (II) modeset(0): EDID (in hex):
+[  1487.880] (II) modeset(0): 	00ffffffffffff000469f223351a0200
+[  1487.880] (II) modeset(0): 	2214010380341d782ac720a455499927
+[  1487.880] (II) modeset(0): 	135054bfef00714f81809500b300d1c0
+[  1487.880] (II) modeset(0): 	010101010101023a801871382d40582c
+[  1487.880] (II) modeset(0): 	450009252100001e000000ff0041384c
+[  1487.880] (II) modeset(0): 	4d54463133373738310a000000fd0037
+[  1487.880] (II) modeset(0): 	4b1e5510000a202020202020000000fc
+[  1487.880] (II) modeset(0): 	0041535553205648323336480a2001b8
+[  1487.880] (II) modeset(0): 	020322714f0102031112130414050e0f
+[  1487.880] (II) modeset(0): 	1d1e1f10230907018301000065030c00
+[  1487.880] (II) modeset(0): 	10008c0ad08a20e02d10103e96000925
+[  1487.880] (II) modeset(0): 	21000018011d007251d01e206e285500
+[  1487.881] (II) modeset(0): 	09252100001e011d00bc52d01e20b828
+[  1487.881] (II) modeset(0): 	554009252100001e8c0ad09020403120
+[  1487.881] (II) modeset(0): 	0c405500092521000018000000000000
+[  1487.881] (II) modeset(0): 	00000000000000000000000000000073
+[  1487.881] (II) modeset(0): Printing probed modes for output HDMI-1
+[  1487.881] (II) modeset(0): Modeline "1920x1080"x60.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  1487.881] (II) modeset(0): Modeline "1920x1080"x50.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  1487.881] (II) modeset(0): Modeline "1920x1080"x59.9  148.35  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.4 kHz e)
+[  1487.881] (II) modeset(0): Modeline "1920x1080i"x60.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[  1487.881] (II) modeset(0): Modeline "1920x1080i"x50.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[  1487.881] (II) modeset(0): Modeline "1920x1080i"x59.9   74.18  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.7 kHz e)
+[  1487.881] (II) modeset(0): Modeline "1680x1050"x59.9  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1280x1024"x75.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1280x1024"x60.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1440x900"x59.9   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1152x864"x75.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1280x720"x60.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1280x720"x50.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1280x720"x59.9   74.18  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1440x576"x50.0   54.00  1440 1464 1592 1728  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1024x768"x75.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1024x768"x70.1   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1024x768"x60.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1440x480"x60.0   54.05  1440 1472 1596 1716  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1487.882] (II) modeset(0): Modeline "1440x480"x59.9   54.00  1440 1472 1596 1716  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1487.882] (II) modeset(0): Modeline "832x624"x74.6   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[  1487.882] (II) modeset(0): Modeline "800x600"x72.2   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[  1487.882] (II) modeset(0): Modeline "800x600"x75.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  1487.882] (II) modeset(0): Modeline "800x600"x60.3   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  1487.882] (II) modeset(0): Modeline "800x600"x56.2   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[  1487.882] (II) modeset(0): Modeline "720x576"x50.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1487.882] (II) modeset(0): Modeline "720x480"x60.0   27.03  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1487.883] (II) modeset(0): Modeline "720x480"x59.9   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1487.883] (II) modeset(0): Modeline "640x480"x75.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  1487.883] (II) modeset(0): Modeline "640x480"x72.8   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[  1487.883] (II) modeset(0): Modeline "640x480"x66.7   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[  1487.883] (II) modeset(0): Modeline "640x480"x60.0   25.20  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1487.883] (II) modeset(0): Modeline "640x480"x59.9   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1487.883] (II) modeset(0): Modeline "720x400"x70.1   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  1487.883] (II) modeset(0): Output HDMI-1 connected
+[  1487.888] (II) modeset(0): Using exact sizes for initial modes
+[  1487.888] (II) modeset(0): Output HDMI-1 using initial mode 1920x1080 +0+0
+[  1487.889] (==) modeset(0): Using gamma correction (1.0, 1.0, 1.0)
+[  1487.889] (==) modeset(0): DPI set to (96, 96)
+[  1487.889] (II) Loading sub module "fb"
+[  1487.889] (II) LoadModule: "fb"
+[  1487.889] (II) Module "fb" already built-in
+[  1487.921] (==) modeset(0): Backing store enabled
+[  1487.921] (==) modeset(0): Silken mouse enabled
+[  1488.053] (II) modeset(0): Initializing kms color map for depth 24, 8 bpc.
+[  1488.054] (==) modeset(0): DPMS enabled
+[  1488.054] (WW) modeset(0): Option "PrimaryGPU" is not used
+[  1488.058] (II) Initializing extension Generic Event Extension
+[  1488.060] (II) Initializing extension SHAPE
+[  1488.061] (II) Initializing extension MIT-SHM
+[  1488.062] (II) Initializing extension XInputExtension
+[  1488.064] (II) Initializing extension XTEST
+[  1488.065] (II) Initializing extension BIG-REQUESTS
+[  1488.066] (II) Initializing extension SYNC
+[  1488.067] (II) Initializing extension XKEYBOARD
+[  1488.069] (II) Initializing extension XC-MISC
+[  1488.070] (II) Initializing extension SECURITY
+[  1488.071] (II) Initializing extension XFIXES
+[  1488.072] (II) Initializing extension RENDER
+[  1488.074] (II) Initializing extension RANDR
+[  1488.076] (II) Initializing extension COMPOSITE
+[  1488.077] (II) Initializing extension DAMAGE
+[  1488.078] (II) Initializing extension MIT-SCREEN-SAVER
+[  1488.079] (II) Initializing extension DOUBLE-BUFFER
+[  1488.081] (II) Initializing extension RECORD
+[  1488.083] (II) Initializing extension DPMS
+[  1488.084] (II) Initializing extension Present
+[  1488.085] (II) Initializing extension DRI3
+[  1488.086] (II) Initializing extension X-Resource
+[  1488.087] (II) Initializing extension XVideo
+[  1488.089] (II) Initializing extension XVideo-MotionCompensation
+[  1488.089] (II) Initializing extension SELinux
+[  1488.089] (II) SELinux: Disabled on system
+[  1488.089] (II) Initializing extension GLX
+[  1488.090] (II) AIGLX: Screen 0 is not DRI2 capable
+[  1488.194] (II) IGLX: Loaded and initialized swrast
+[  1488.194] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  1488.194] (II) Initializing extension XFree86-VidModeExtension
+[  1488.195] (II) Initializing extension XFree86-DGA
+[  1488.196] (II) Initializing extension XFree86-DRI
+[  1488.196] (II) Initializing extension DRI2
+[  1488.199] (II) modeset(0): Damage tracking initialized
+[  1488.199] (II) modeset(0): Setting screen physical size to 508 x 285
+[  1488.698] (II) config/udev: Adding input device vc4-hdmi (/dev/input/event3)
+[  1488.698] (**) vc4-hdmi: Applying InputClass "libinput keyboard catchall"
+[  1488.698] (II) LoadModule: "libinput"
+[  1488.699] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[  1488.740] (II) Module libinput: vendor="X.Org Foundation"
+[  1488.740] 	compiled for 1.21.1.3, module version = 1.2.1
+[  1488.740] 	Module class: X.Org XInput Driver
+[  1488.740] 	ABI class: X.Org XInput driver, version 24.4
+[  1488.740] (II) Using input driver 'libinput' for 'vc4-hdmi'
+[  1488.745] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 23 paused 0
+[  1488.745] (**) vc4-hdmi: always reports core events
+[  1488.745] (**) Option "Device" "/dev/input/event3"
+[  1488.798] (II) event3  - vc4-hdmi: is tagged by udev as: Keyboard Pointingstick
+[  1488.800] (II) event3  - vc4-hdmi: device is a pointer
+[  1488.800] (II) event3  - vc4-hdmi: device is a keyboard
+[  1488.801] (II) event3  - vc4-hdmi: device removed
+[  1488.802] (II) libinput: vc4-hdmi: needs a virtual subdevice
+[  1488.802] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f902000.hdmi/rc/rc0/input3/event3"
+[  1488.802] (II) XINPUT: Adding extended input device "vc4-hdmi" (type: MOUSE, id 6)
+[  1488.804] (**) Option "AccelerationScheme" "none"
+[  1488.804] (**) vc4-hdmi: (accel) selected scheme none/0
+[  1488.804] (**) vc4-hdmi: (accel) acceleration factor: 2.000
+[  1488.804] (**) vc4-hdmi: (accel) acceleration threshold: 4
+[  1488.810] (II) event3  - vc4-hdmi: is tagged by udev as: Keyboard Pointingstick
+[  1488.811] (II) event3  - vc4-hdmi: device is a pointer
+[  1488.811] (II) event3  - vc4-hdmi: device is a keyboard
+[  1488.818] (II) config/udev: Adding input device vc4-hdmi HDMI Jack (/dev/input/event4)
+[  1488.818] (II) No input driver specified, ignoring this device.
+[  1488.819] (II) This device may have been added with another device file.
+[  1488.825] (II) config/udev: Adding input device USB OPTICAL MOUSE  (/dev/input/event5)
+[  1488.825] (**) USB OPTICAL MOUSE : Applying InputClass "libinput pointer catchall"
+[  1488.825] (II) Using input driver 'libinput' for 'USB OPTICAL MOUSE '
+[  1488.831] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 26 paused 0
+[  1488.831] (**) USB OPTICAL MOUSE : always reports core events
+[  1488.831] (**) Option "Device" "/dev/input/event5"
+[  1488.845] (II) event5  - USB OPTICAL MOUSE : is tagged by udev as: Mouse
+[  1488.846] (II) event5  - USB OPTICAL MOUSE : device is a pointer
+[  1488.847] (II) event5  - USB OPTICAL MOUSE : device removed
+[  1488.848] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.2/1-1.2:1.0/0003:275D:0BA6.0003/input/input5/event5"
+[  1488.848] (II) XINPUT: Adding extended input device "USB OPTICAL MOUSE " (type: MOUSE, id 7)
+[  1488.849] (**) Option "AccelerationScheme" "none"
+[  1488.849] (**) USB OPTICAL MOUSE : (accel) selected scheme none/0
+[  1488.849] (**) USB OPTICAL MOUSE : (accel) acceleration factor: 2.000
+[  1488.849] (**) USB OPTICAL MOUSE : (accel) acceleration threshold: 4
+[  1488.860] (II) event5  - USB OPTICAL MOUSE : is tagged by udev as: Mouse
+[  1488.861] (II) event5  - USB OPTICAL MOUSE : device is a pointer
+[  1488.920] (II) config/udev: Adding input device USB OPTICAL MOUSE  (/dev/input/mouse0)
+[  1488.921] (II) No input driver specified, ignoring this device.
+[  1488.921] (II) This device may have been added with another device file.
+[  1489.000] (II) config/udev: Adding input device Dell KB216 Wired Keyboard (/dev/input/event0)
+[  1489.000] (**) Dell KB216 Wired Keyboard: Applying InputClass "libinput keyboard catchall"
+[  1489.000] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard'
+[  1489.005] (II) systemd-logind: got fd for /dev/input/event0 13:64 fd 27 paused 0
+[  1489.005] (**) Dell KB216 Wired Keyboard: always reports core events
+[  1489.005] (**) Option "Device" "/dev/input/event0"
+[  1489.054] (II) event0  - Dell KB216 Wired Keyboard: is tagged by udev as: Keyboard
+[  1489.055] (II) event0  - Dell KB216 Wired Keyboard: device is a keyboard
+[  1489.057] (II) event0  - Dell KB216 Wired Keyboard: device removed
+[  1489.058] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.0/0003:413C:2113.0001/input/input0/event0"
+[  1489.058] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard" (type: KEYBOARD, id 8)
+[  1489.058] (**) Option "xkb_model" "pc105"
+[  1489.058] (**) Option "xkb_layout" "us"
+[  1489.071] (II) event0  - Dell KB216 Wired Keyboard: is tagged by udev as: Keyboard
+[  1489.071] (II) event0  - Dell KB216 Wired Keyboard: device is a keyboard
+[  1489.382] (II) config/udev: Adding input device Dell KB216 Wired Keyboard System Control (/dev/input/event1)
+[  1489.383] (**) Dell KB216 Wired Keyboard System Control: Applying InputClass "libinput keyboard catchall"
+[  1489.383] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard System Control'
+[  1489.389] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 28 paused 0
+[  1489.389] (**) Dell KB216 Wired Keyboard System Control: always reports core events
+[  1489.389] (**) Option "Device" "/dev/input/event1"
+[  1489.400] (II) event1  - Dell KB216 Wired Keyboard System Control: is tagged by udev as: Keyboard
+[  1489.401] (II) event1  - Dell KB216 Wired Keyboard System Control: device is a keyboard
+[  1489.402] (II) event1  - Dell KB216 Wired Keyboard System Control: device removed
+[  1489.403] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:413C:2113.0002/input/input1/event1"
+[  1489.403] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard System Control" (type: KEYBOARD, id 9)
+[  1489.403] (**) Option "xkb_model" "pc105"
+[  1489.403] (**) Option "xkb_layout" "us"
+[  1489.416] (II) event1  - Dell KB216 Wired Keyboard System Control: is tagged by udev as: Keyboard
+[  1489.416] (II) event1  - Dell KB216 Wired Keyboard System Control: device is a keyboard
+[  1489.424] (II) config/udev: Adding input device Dell KB216 Wired Keyboard Consumer Control (/dev/input/event2)
+[  1489.425] (**) Dell KB216 Wired Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  1489.425] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard Consumer Control'
+[  1489.431] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 29 paused 0
+[  1489.431] (**) Dell KB216 Wired Keyboard Consumer Control: always reports core events
+[  1489.431] (**) Option "Device" "/dev/input/event2"
+[  1489.443] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: is tagged by udev as: Keyboard
+[  1489.445] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device is a keyboard
+[  1489.446] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device removed
+[  1489.446] (II) libinput: Dell KB216 Wired Keyboard Consumer Control: needs a virtual subdevice
+[  1489.447] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:413C:2113.0002/input/input2/event2"
+[  1489.447] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard Consumer Control" (type: MOUSE, id 10)
+[  1489.447] (**) Option "AccelerationScheme" "none"
+[  1489.447] (**) Dell KB216 Wired Keyboard Consumer Control: (accel) selected scheme none/0
+[  1489.447] (**) Dell KB216 Wired Keyboard Consumer Control: (accel) acceleration factor: 2.000
+[  1489.447] (**) Dell KB216 Wired Keyboard Consumer Control: (accel) acceleration threshold: 4
+[  1489.459] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: is tagged by udev as: Keyboard
+[  1489.459] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device is a keyboard
+[  1491.129] (**) vc4-hdmi: Applying InputClass "libinput keyboard catchall"
+[  1491.130] (II) Using input driver 'libinput' for 'vc4-hdmi'
+[  1491.130] (II) systemd-logind: returning pre-existing fd for /dev/input/event3 13:67
+[  1491.130] (**) vc4-hdmi: always reports core events
+[  1491.130] (**) Option "Device" "/dev/input/event3"
+[  1491.130] (II) libinput: vc4-hdmi: is a virtual subdevice
+[  1491.130] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f902000.hdmi/rc/rc0/input3/event3"
+[  1491.130] (II) XINPUT: Adding extended input device "vc4-hdmi" (type: KEYBOARD, id 11)
+[  1491.130] (**) Option "xkb_model" "pc105"
+[  1491.130] (**) Option "xkb_layout" "us"
+[  1491.132] (**) Dell KB216 Wired Keyboard Consumer Control: Applying InputClass "libinput keyboard catchall"
+[  1491.132] (II) Using input driver 'libinput' for 'Dell KB216 Wired Keyboard Consumer Control'
+[  1491.132] (II) systemd-logind: returning pre-existing fd for /dev/input/event2 13:66
+[  1491.132] (**) Dell KB216 Wired Keyboard Consumer Control: always reports core events
+[  1491.132] (**) Option "Device" "/dev/input/event2"
+[  1491.132] (II) libinput: Dell KB216 Wired Keyboard Consumer Control: is a virtual subdevice
+[  1491.133] (**) Option "config_info" "udev:/sys/devices/platform/soc/3f980000.usb/usb1/1-1/1-1.3/1-1.3:1.1/0003:413C:2113.0002/input/input2/event2"
+[  1491.133] (II) XINPUT: Adding extended input device "Dell KB216 Wired Keyboard Consumer Control" (type: KEYBOARD, id 12)
+[  1491.133] (**) Option "xkb_model" "pc105"
+[  1491.133] (**) Option "xkb_layout" "us"
+[  1496.008] (II) modeset(0): Disabling kernel dirty updates, not required.
+[  1503.300] (**) Option "fd" "23"
+[  1503.302] (**) Option "fd" "26"
+[  1503.302] (II) event5  - USB OPTICAL MOUSE : device removed
+[  1503.303] (**) Option "fd" "27"
+[  1503.303] (II) event0  - Dell KB216 Wired Keyboard: device removed
+[  1503.305] (**) Option "fd" "28"
+[  1503.305] (II) event1  - Dell KB216 Wired Keyboard System Control: device removed
+[  1503.306] (**) Option "fd" "29"
+[  1503.307] (**) Option "fd" "23"
+[  1503.307] (II) event3  - vc4-hdmi: device removed
+[  1503.310] (**) Option "fd" "29"
+[  1503.311] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device removed
+[  1503.390] (II) systemd-logind: got pause for 13:69
+[  1503.390] (II) systemd-logind: got pause for 13:64
+[  1503.390] (II) systemd-logind: got pause for 13:66
+[  1503.390] (II) systemd-logind: got pause for 13:67
+[  1503.390] (II) systemd-logind: got pause for 13:65
+[  1507.722] (II) systemd-logind: got resume for 13:69
+[  1507.739] (II) systemd-logind: got resume for 13:64
+[  1507.767] (II) systemd-logind: got resume for 13:66
+[  1507.767] (II) systemd-logind: got resume for 226:0
+[  1507.942] (II) modeset(0): EDID vendor "ACI", prod id 9202
+[  1507.942] (II) modeset(0): Using EDID range info for horizontal sync
+[  1507.942] (II) modeset(0): Using EDID range info for vertical refresh
+[  1507.942] (II) modeset(0): Printing DDC gathered Modelines:
+[  1507.942] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  1507.942] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1507.942] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1507.942] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  1507.942] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1507.942] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1507.942] (II) modeset(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1440x480"x0.0   54.00  1440 1472 1596 1716  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1440x576"x0.0   54.00  1440 1464 1592 1728  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  1507.943] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  1507.943] (II) modeset(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[  1507.943] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  1507.943] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[  1507.943] (II) modeset(0): Modeline "640x480"x0.0   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[  1507.943] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1024x768"x0.0   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  1507.943] (II) modeset(0): Modeline "832x624"x0.0   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[  1507.943] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  1507.943] (II) modeset(0): Modeline "800x600"x0.0   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  1507.943] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  1507.944] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  1507.944] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  1508.085] (II) modeset(0): EDID vendor "ACI", prod id 9202
+[  1508.085] (II) modeset(0): Using hsync ranges from config file
+[  1508.085] (II) modeset(0): Using vrefresh ranges from config file
+[  1508.085] (II) modeset(0): Printing DDC gathered Modelines:
+[  1508.085] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2008 2052 2200  1080 1084 1089 1125 +hsync +vsync (67.5 kHz eP)
+[  1508.085] (II) modeset(0): Modeline "720x480"x0.0   27.00  720 736 798 858  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1508.085] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1390 1430 1650  720 725 730 750 +hsync +vsync (45.0 kHz e)
+[  1508.085] (II) modeset(0): Modeline "1280x720"x0.0   74.25  1280 1720 1760 1980  720 725 730 750 +hsync +vsync (37.5 kHz e)
+[  1508.085] (II) modeset(0): Modeline "720x576"x0.0   27.00  720 732 796 864  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1508.086] (II) modeset(0): Modeline "640x480"x0.0   25.18  640 656 752 800  480 490 492 525 -hsync -vsync (31.5 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1920x1080i"x0.0   74.25  1920 2448 2492 2640  1080 1084 1094 1125 interlace +hsync +vsync (28.1 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1920x1080i"x0.0   74.25  1920 2008 2052 2200  1080 1084 1094 1125 interlace +hsync +vsync (33.8 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1440x480"x0.0   54.00  1440 1472 1596 1716  480 489 495 525 -hsync -vsync (31.5 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1440x576"x0.0   54.00  1440 1464 1592 1728  576 581 586 625 -hsync -vsync (31.2 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1920x1080"x0.0  148.50  1920 2448 2492 2640  1080 1084 1089 1125 +hsync +vsync (56.2 kHz e)
+[  1508.086] (II) modeset(0): Modeline "800x600"x0.0   40.00  800 840 968 1056  600 601 605 628 +hsync +vsync (37.9 kHz e)
+[  1508.086] (II) modeset(0): Modeline "800x600"x0.0   36.00  800 824 896 1024  600 601 603 625 +hsync +vsync (35.2 kHz e)
+[  1508.086] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 656 720 840  480 481 484 500 -hsync -vsync (37.5 kHz e)
+[  1508.086] (II) modeset(0): Modeline "640x480"x0.0   31.50  640 664 704 832  480 489 492 520 -hsync -vsync (37.9 kHz e)
+[  1508.086] (II) modeset(0): Modeline "640x480"x0.0   30.24  640 704 768 864  480 483 486 525 -hsync -vsync (35.0 kHz e)
+[  1508.086] (II) modeset(0): Modeline "720x400"x0.0   28.32  720 738 846 900  400 412 414 449 -hsync +vsync (31.5 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1280x1024"x0.0  135.00  1280 1296 1440 1688  1024 1025 1028 1066 +hsync +vsync (80.0 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1024x768"x0.0   78.75  1024 1040 1136 1312  768 769 772 800 +hsync +vsync (60.0 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1024x768"x0.0   75.00  1024 1048 1184 1328  768 771 777 806 -hsync -vsync (56.5 kHz e)
+[  1508.086] (II) modeset(0): Modeline "1024x768"x0.0   65.00  1024 1048 1184 1344  768 771 777 806 -hsync -vsync (48.4 kHz e)
+[  1508.086] (II) modeset(0): Modeline "832x624"x0.0   57.28  832 864 928 1152  624 625 628 667 -hsync -vsync (49.7 kHz e)
+[  1508.087] (II) modeset(0): Modeline "800x600"x0.0   49.50  800 816 896 1056  600 601 604 625 +hsync +vsync (46.9 kHz e)
+[  1508.087] (II) modeset(0): Modeline "800x600"x0.0   50.00  800 856 976 1040  600 637 643 666 +hsync +vsync (48.1 kHz e)
+[  1508.087] (II) modeset(0): Modeline "1152x864"x0.0  108.00  1152 1216 1344 1600  864 865 868 900 +hsync +vsync (67.5 kHz e)
+[  1508.087] (II) modeset(0): Modeline "1280x1024"x0.0  108.00  1280 1328 1440 1688  1024 1025 1028 1066 +hsync +vsync (64.0 kHz e)
+[  1508.087] (II) modeset(0): Modeline "1440x900"x0.0   88.75  1440 1488 1520 1600  900 903 909 926 +hsync -vsync (55.5 kHz e)
+[  1508.087] (II) modeset(0): Modeline "1680x1050"x0.0  119.00  1680 1728 1760 1840  1050 1053 1059 1080 +hsync -vsync (64.7 kHz e)
+[  1508.119] (II) event5  - USB OPTICAL MOUSE : is tagged by udev as: Mouse
+[  1508.121] (II) event5  - USB OPTICAL MOUSE : device is a pointer
+[  1508.133] (II) event0  - Dell KB216 Wired Keyboard: is tagged by udev as: Keyboard
+[  1508.134] (II) event0  - Dell KB216 Wired Keyboard: device is a keyboard
+[  1508.148] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: is tagged by udev as: Keyboard
+[  1508.149] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device is a keyboard
+[  1508.151] (II) systemd-logind: got resume for 13:67
+[  1508.157] (II) event3  - vc4-hdmi: is tagged by udev as: Keyboard Pointingstick
+[  1508.158] (II) event3  - vc4-hdmi: device is a pointer
+[  1508.158] (II) event3  - vc4-hdmi: device is a keyboard
+[  1508.161] (II) systemd-logind: got resume for 13:65
+[  1508.173] (II) event1  - Dell KB216 Wired Keyboard System Control: is tagged by udev as: Keyboard
+[  1508.174] (II) event1  - Dell KB216 Wired Keyboard System Control: device is a keyboard
+[  1513.532] (**) Option "fd" "39"
+[  1513.537] (**) Option "fd" "27"
+[  1513.537] (II) event5  - USB OPTICAL MOUSE : device removed
+[  1513.543] (**) Option "fd" "28"
+[  1513.543] (II) event0  - Dell KB216 Wired Keyboard: device removed
+[  1513.545] (**) Option "fd" "23"
+[  1513.545] (II) event1  - Dell KB216 Wired Keyboard System Control: device removed
+[  1513.547] (**) Option "fd" "29"
+[  1513.548] (**) Option "fd" "39"
+[  1513.549] (II) event3  - vc4-hdmi: device removed
+[  1513.550] (**) Option "fd" "29"
+[  1513.550] (II) event2  - Dell KB216 Wired Keyboard Consumer Control: device removed
+[  1513.636] (II) systemd-logind: got pause for 13:69
+[  1513.636] (II) systemd-logind: got pause for 13:64
+[  1513.636] (II) systemd-logind: got pause for 13:66
+[  1513.636] (II) systemd-logind: got pause for 13:67
+[  1513.636] (II) systemd-logind: got pause for 13:65
+[  1518.632] (II) UnloadModule: "libinput"
+[  1518.633] (II) systemd-logind: not releasing fd for 13:66, still in use
+[  1518.633] (II) UnloadModule: "libinput"
+[  1518.633] (II) systemd-logind: not releasing fd for 13:67, still in use
+[  1518.633] (II) UnloadModule: "libinput"
+[  1518.633] (II) systemd-logind: releasing fd for 13:66
+[  1518.674] (II) UnloadModule: "libinput"
+[  1518.674] (II) systemd-logind: releasing fd for 13:65
+[  1518.714] (II) UnloadModule: "libinput"
+[  1518.715] (II) systemd-logind: releasing fd for 13:64
+[  1518.755] (II) UnloadModule: "libinput"
+[  1518.755] (II) systemd-logind: releasing fd for 13:69
+[  1518.787] (II) UnloadModule: "libinput"
+[  1518.787] (II) systemd-logind: releasing fd for 13:67
+[  1518.858] (II) Server terminated successfully (0). Closing log file.

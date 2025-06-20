@@ -7,3 +7,5 @@ DOWNLOAD http://192.168.0.107/tailsnet/client/assets/modem.wav /home/tails1154/c
 DOWNLOAD http://192.168.0.107/tailsnet/client/assets/kartv.wav /home/tails1154/client/assets/kartv.wav
 
 DOWNLOAD http://192.168.0.107/tailsnet/client/assets/dialing.wav /home/tails1154/client/assets/dialing.wav
+
+DOWNLOAD http://192.168.0.107/tailsnet/client/assets/splash.wav /home/tails1154/client/assets/splash.wav

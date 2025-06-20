@@ -1,0 +1,71 @@
+import os
+import socket
+import pygame
+from Xlib import display
+
+SOCKET_PATH = "/tmp/indicator_socket"
+
+# Cleanup any old socket
+if os.path.exists(SOCKET_PATH):
+    os.remove(SOCKET_PATH)
+
+# Set window position
+os.environ['SDL_VIDEO_WINDOW_POS'] = "0,0"
+pygame.init()
+
+WIDTH, HEIGHT = 120, 50
+screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.NOFRAME)
+pygame.display.set_caption("Indicators")
+clock = pygame.time.Clock()
+
+# Initial state
+power_on = False
+
+# Move window to bottom-left using Xlib
+def move_window():
+    d = display.Display()
+    root = d.screen().root
+    window_id = pygame.display.get_wm_info()['window']
+    window = d.create_resource_object('window', window_id)
+    height = root.get_geometry().height
+    window.configure(x=0, y=height - HEIGHT)
+    d.sync()
+
+move_window()
+
+# Start socket server
+server = socket.socket(socket.AF_UNIX, socket.SOCK_DGRAM)
+server.bind(SOCKET_PATH)
+
+def handle_command(cmd):
+    global power_on
+    if cmd == "power on":
+        power_on = True
+    elif cmd == "power off":
+        power_on = False
+
+# Main loop
+running = True
+while running:
+    screen.fill((30, 30, 30))
+    pygame.draw.circle(screen, (0, 255, 0) if power_on else (100, 0, 0), (25, HEIGHT // 2), 15)
+    pygame.display.flip()
+    clock.tick(30)
+
+    # Handle socket messages
+    try:
+        server.settimeout(0.01)
+        data = server.recv(1024).decode()
+        handle_command(data.strip())
+    except socket.timeout:
+        pass
+
+    # Handle Pygame quit
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+server.close()
+pygame.quit()
+os.remove(SOCKET_PATH)
+

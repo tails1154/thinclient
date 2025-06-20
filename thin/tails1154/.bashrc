@@ -116,6 +116,8 @@ fi
 clear
 echo "Loading..."
 export PATH=$PATH:/home/tails1154/.local/bin
+#export HTTP_PROXY="$(cat /home/tails1154/ip.txt):8080/"
+
 stty_orig=$(stty -g)
 stty -icanon -echo min 0 time 20
 

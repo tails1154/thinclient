@@ -539,3 +539,205 @@ ls
 cd
 startx
 exit
+killall runner.sh
+ls
+sudo apt install python3-cefpython3
+pip isntall cefpython3 --break-system-packages
+sudo apt install python-pip -y
+sudo apt install python3-pip -y
+;s
+ls
+killall runner.sh
+wget http://192.168.0.107:3000/api/getuuid
+killall runner.sh
+export DISPLAY=:0
+ls
+./runner.sh
+ls
+./scripts/initial.sh 
+./runner.sh
+sudo apt install python3-gi gir1.2-webkit2-4.0 libwebkit2gtk4.0-dev
+sudo apt install python3-gi gir1.2-webkit2-4.0 libwebkit2gtk-4.0-dev
+./runner.sh
+killall runner.sh
+ls
+./scripts/initial.sh
+ls
+rm -rf ssid.txt
+./scripts/initial.sh
+ls
+cd scripts/
+ls
+nano initial.sh 
+ls
+./initial.sh
+cd ..
+ls
+ls logs
+ls
+scp -P 1699 -r /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+killall runner.sh
+ls
+papalay client/assets/modem.wav 
+pactl
+pamon
+pulseaudio --help
+pulseaudio --start -D
+killall runner.sh
+ls
+nano logs/runner.log 
+ls
+killall runner.sh
+ls
+ssh -p 1699 tails1154@192.168.0.107
+ls
+ssh -p 1699 tails1154@192.168.0.107
+sudo reboot now
+ls
+ssh -p 1699 tails1154@192.168.0.107
+ls
+nano ip.txt
+ls
+cat ip.txt
+ls
+nano ~/.bashrc
+ls
+exit
+killall runner.sh
+exit
+ls
+echo $http_proxy 
+nano ~/.bashrc
+ls
+exit
+cklear
+exit
+ip a
+curl 192.168.0.107:3000/api/prereg
+curl 192.168.0.107:3000/api/getuuid
+curl 192.168.0.107:3000/api/proxy
+startx
+unset HTTP_PROXY
+startx
+ls
+ip a
+sudo systemctl start sshd
+ls
+nano runner.sh
+ls
+nano runner.sh
+socat
+sudo apt install socat -y
+ls
+nano blink.sh
+ls
+chmod +rwx blink.sh
+ls
+nano runner.sh
+;s
+ls
+;s
+s;s
+ls
+l
+sl
+;;;;;;;;;
+s;;;;;;;;;;
+s;s;s';s;s;s;s;
+ls
+'
+ls
+startx
+ls
+/home/tails1154/blink.sh
+ls
+nano blink.sh
+ls
+python3 light.py
+sudo apt install python3-xlib
+startx
+ls
+nano runner.sh
+ls
+nano blink.sh
+ls
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+ls
+./scripts/initial.sh 
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+exit
+ls
+nano runner.sh
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+ls
+./scripts/initial.sh 
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+./scripts/initial.sh 
+exit
+ls
+./runner.sh
+ls
+startx
+nano runner.sh
+./scripts/initial.sh 
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+exit
+ls
+./scripts/initial.sh
+ls
+exit
+nano runner.sh
+startx
+exit
+./scripts/initial.sh
+exut
+exit
+s
+ls
+nano light.py
+ls
+nano runner.sh 
+killall -9 runner.sh
+killall runner.sh
+export DISPLAY=:0
+nano runner.sh
+./runner.sh
+nano ~/.bashrc
+./runner.sh
+killall runner.sh
+ls
+killall runner.sh
+killall X
+killall Xorg
+killall runner.sh
+killall Xorg
+killall runner.sh
+killall Xorg
+killall runner.sh
+killall Xorg
+killall runner.sh
+killall Xorg
+sudo shutdown now
+ls
+startx
+killall Xorg
+startx
+exit
+s
+ls
+nano light.py
+mv lughtmpy light.py.bak
+mv light.py light.py.bak
+ls
+nano light.py
+ls
+startx
+ls
+startx
+./scripts/initial.sh 
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+./scripts/initial.sh 
+startx
+exit
+startx
+exit

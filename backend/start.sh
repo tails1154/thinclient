@@ -1,3 +1,4 @@
 killall python3
-python3 server.py &
-mitmproxy -s proxy.py
+python3 server.py | tee > server.py.log &
+mitmproxy
+killall python3
