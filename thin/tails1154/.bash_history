@@ -741,3 +741,164 @@ startx
 exit
 startx
 exit
+sudo reboot now
+l
+ls
+killall runner.sh
+killall Xorg
+sudo apt install lwm
+export DISPLAY=:0
+lwm
+lwm --help
+man lwm
+lwm
+sudo apt install swaywm
+icewm
+sudo apt install icewm
+sudo update-alternatives --set x-session-manager
+startx
+export DISPLAY=:0
+ls
+mkdir ~/.icewm
+nano ~/.icewm/prefoverride
+icewm
+killall Xorg
+man icewm
+nano ~/.icewm/prefoverride 
+startx
+icewm
+sudo apt search unclutter
+sudo apt install unclutter -y
+unclutter
+unclutter --help
+unclutter -idle 0
+nano ~/runner.sh
+unclutter -idle 0
+nano ~/runner.sh
+ls
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+ls
+./scripts/initial.sh 
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+killall Xorg
+ls
+nano .icewm/prefoverride 
+killall Xorg
+nano .icewm/prefoverride 
+icewm-winoptions
+sudo apt install icewm-winoptions
+nano ~/.icewm/winoptions
+icesh  reload
+icesh --help
+man icesh
+killall Xorg
+nano ~/.icewm/prefoverride 
+icewm --postpreferences
+icewm --postpreferences | grep Key
+icewm --postpreferences | grep Key >> ~/.icewm/prefoverride 
+echo "$(icewm --postpreferences | grep Key)" >> ~/.icewm/prefoverride 
+echo "$(icewm --postpreferences --replace | grep Key)" >> ~/.icewm/prefoverride 
+icewm --postpreferences | grep Key
+icewm --postpreferences | grep Key > ~/.icewm/prefoverride.1
+icewm --postpreferences | grep Key | tee >> ~/.icewm/prefoverride
+icewm --postpreferences | grep Key >> ~/.icewm/prefoverride
+nano ~/.icewm/prefoverride
+ls
+nano ~/.icewm/prefoverride
+icewm --postpreferences | grep Key >> ~/.icewm/prefoverride
+nano ~/.icewm/prefoverride
+icewm --postpreferences | grep Key | tee >> ~/.icewm/prefoverride
+nano ~/.icewm/prefoverride
+icewm --postpreferences | grep Key | tee >> ~/.icewm/prefoverride
+nano ~/.icewm/prefoverride
+nano ~/.icewm/prefoverride.1 
+icewm --postpreferences | grep Key > ~/.icewm/prefoverride.1
+nano ~/.icewm/prefoverride.1 
+icewm --postpreferences | grep Key >> ~/.icewm/prefoverride
+echo "$(icewm --postpreferences --replace | grep Key)" >> ~/.icewm/prefoverride 
+nano ~/.icewm/prefoverride
+icewm --postpreferences
+icewm --postpreferences > pref.tmp
+ls
+nano pref.tmp 
+ls
+$(cat pref.tmp) | grep Key >> ~/.icewm/prefoverride
+echo "$(cat pref.tmp)" | grep Key >> ~/.icewm/prefoverride
+nano ~/.icewm/prefoverride
+sed -i 's/^\(Key[^=]*=\).*/\1""/' ~/.icewm/prefoverride
+nano ~/.icewm/prefoverride
+ls
+killall Xorg
+ps
+top
+kill 14279
+killall runner.sh
+ls
+export DISPLAY=:0
+ls
+./runner.sh
+killall python3
+./runner.sh
+ls
+./scripts/initial.sh 
+./runner.sh
+killall blink.sh
+killall python3
+./runner.sh
+killall blink.sh
+killall python3
+ls
+./scripts/initial.sh 
+killall Xorg
+ls
+killall Xorg
+./scripts/initial.sh 
+ls
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+ssh -p 1699 tails1154@192.168,.0.104
+ssh -p 1699 tails1154@192.168,.0.107
+sudo dhconfig
+sudo dhclient
+ssh -p 1699 tails1154@192.168.0.107
+killall Xorg
+ssh -p 1699 tails1154@192.168.0.107
+killall Xorg
+ls
+cp blink.sh connblink.sh
+nano connblink.sh 
+ls
+ssh -p 1699 tails1154@192.168,.0.107
+ssh -p 1699 tails1154@192.168.0.107
+ssh -p 1699 tails1154@192.168,.0.107
+ip a
+ssh -p 1699 tails1154@192.168,.0.107
+ssh -p 1699 tails1154@192.168.0.107
+exit
+ls
+killall Xorg
+ls
+rm -rf pref.tmp
+ls
+./scripts/initial.sh 
+ls
+ls .pywebview/
+ls
+killall Xorg
+exit
+startx
+exit
+ls
+nano runner.sh
+ls
+killall Xorg
+nano runner.sh 
+pulseaudio --start -D
+nano runner.sh 
+killall runner.sh
+killall Xorg
+sudo reboot now
+pulseaudio --start
+ls
+nano runner.sh 
+ls
+startx

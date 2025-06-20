@@ -23,6 +23,7 @@ class API:
     def update(self):
         update()
     def close(self):
+        send_power_led("warning off")
         window.destroy()
 
 
@@ -95,7 +96,7 @@ ssid = open("/home/tails1154/ssid.txt", "rt").read()
 global modem
 pygame.mixer.init()
 global version
-version = "v1.0.0-alpha31"
+version = "v1.0.0"
 
 
 global running

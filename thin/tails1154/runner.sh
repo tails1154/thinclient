@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "[runner.sh] runner.sh started"
 echo "[runner.sh] Starting pulseaudio"
-pulseaudio --start -D
+pulseaudio --start
+sleep 3
 echo "[runner.sh] Starting indicator"
 python3 /home/tails1154/light.py &
 echo "[runner.sh] Sleeping 5 seconds for it to start"
@@ -15,11 +16,14 @@ echo "[runner.sh] Starting unclutter"
 unclutter -idle 0 &
 counter=0
 while [ yes ]; do
+	killall -9 blink.sh
+	/home/tails1154/blink.sh &
 	echo "[runner.sh] Running firmware"
 	cd /home/tails1154/client
 #	killall blink.sh
 	echo "power on" | socat - UNIX-SENDTO:"$SOCKET"
 	python3 firmware.py
+	killall -9 blink.sh
 	/home/tails1154/blink.sh &
 	if [ $(ls counter.stop) ]; then
 	echo "[runner.sh] Counter bypassed because counter.stop exists."
