@@ -1,0 +1,3 @@
+# thinclient
+
+internet proxy thing
