@@ -96,7 +96,7 @@ ssid = open("/home/tails1154/ssid.txt", "rt").read()
 global modem
 pygame.mixer.init()
 global version
-version = "v1.0.0"
+version = "v1.1.1"
 
 
 global running
@@ -114,6 +114,9 @@ def on_loaded():
     browserStarting = False
     send_power_led("warning on")
     select()
+    window.evaluate_js("document.addEventListener('keydown',e=>{if(e.key==='F10'){e.preventDefault();let o=document.createElement('div');o.style='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:9999;';let d=document.createElement('div');d.style='background:#fff;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.5);display:flex;flex-direction:column;gap:10px;';let i=document.createElement('input');i.type='text';i.placeholder='Enter URL (e.g., https://example.com)';i.style='padding:10px;font-size:16px;width:300px;';let g=document.createElement('button');g.textContent='Go';g.style='padding:10px;font-size:16px;';g.onclick=()=>{let u=i.value.trim();if(!/^https?:\/\//i.test(u))u='https://'+u;window.location.href=u};let c=document.createElement('button');c.textContent='Cancel';c.style='padding:10px;';c.onclick=()=>document.body.removeChild(o);let b=document.createElement('div');b.style='display:flex;justify-content:space-between;gap:10px;';b.appendChild(g);b.appendChild(c);d.appendChild(i);d.appendChild(b);o.appendChild(d);document.body.appendChild(o);i.focus();}});")
+    window.evaluate_js("(()=>{let i=0,e=[...document.querySelectorAll('a,button,input,select,textarea,[tabindex]')].filter(el=>el.offsetParent!==null),s=document.createElement('div');s.style='position:absolute;border:2px solid blue;pointer-events:none;z-index:999999;transition:.1s all ease;';document.body.appendChild(s);function move(){if(!e[i])return;let r=e[i].getBoundingClientRect();s.style.top=(r.top+scrollY)+'px';s.style.left=(r.left+scrollX)+'px';s.style.width=r.width+'px';s.style.height=r.height+'px';e[i].scrollIntoView({block:'nearest'});}move();document.addEventListener('keydown',k=>{if(k.key==='ArrowDown')i=(i+1)%e.length,move();else if(k.key==='ArrowUp')i=(i-1+e.length)%e.length,move();else if(k.key==='Enter'){let t=e[i];t.focus();if(typeof t.click==='function')t.click();}});})();")
+    window.evaluate_js("document.addEventListener('keydown',e=>{if(e.key==='F1'){e.preventDefault();location.href='http://192.168.0.107/tailsnet/assets/home.html';}});")
     pygame.mixer.music.stop()
 running = True
 
@@ -192,12 +195,20 @@ while running:
                 proxy_url = f"http://192.168.0.107:8080/?ssid={ssid}"
 ##                final_url = f"{proxy_url}?ssid={ssid}"
                 os.environ["http_proxy"] = proxy_url
+                os.environ["https_proxy"] = f"http://192.168.0.107:8080/?ssid={ssid}"
                # api = API()
                 api = API()
                 global window
                 window = webview.create_window("TailsNet Proxy", "http://192.168.0.107/tailsnet/assets/splash.html", width=1280, height=720, js_api=api)
                 window.events.loaded += on_loaded
-                webview.start(gui='gtk', debug=False, http_server=False)
+                webview.settings = {
+                 'ALLOW_DOWNLOADS': True,
+                 'ALLOW_FILE_URLS': True,
+                 'OPEN_EXTERNAL__LINKS_IN_BROWSER': False,
+                 'OPEN_DEVTOOLS_IN_DEBUG': False,
+                 'IGNORE_SSL_ERRORS': True
+                }
+                webview.start(gui='gtk', debug=True, http_server=False)
 
     #            thread1 = threading.Thread(target=startwebview)
    #             thread1.start()
