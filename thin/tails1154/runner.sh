@@ -31,8 +31,8 @@ while [ yes ]; do
 	else
 	counter=$((counter + 1))
 	echo "[runner.sh] firmware.py closed. Counter is now $counter"
-	if [ "$counter" -ge 20 ]; then
-		echo "[runner.sh] Counter has reached 20. Assuming firmware is broken. Downloading a dummy (downloader?) copy."
+	if [ "$counter" -ge 5 ]; then
+		echo "[runner.sh] Counter has reached 5. Assuming firmware is broken. Downloading a dummy (downloader?) copy."
 		export yip="$(cat /home/tails1154/ip.txt)"
 		wget "$yip/tailsnet/dummy.py"
 		mv dummy.py /home/tails1154/client/firmware.py

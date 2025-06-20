@@ -902,3 +902,54 @@ ls
 nano runner.sh 
 ls
 startx
+ssh -p 1699 tails1154@192.168.0.107
+exit
+./scripts/initial.sh 
+scp -r -P 1699 /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+ls
+s
+ls
+export http_proxy="http://192.168.0.107:8080"
+curl mitm.it
+wget mitm.it/cert/pem
+mv pem cert.pem
+sudo cp cert.pem /usr/share/ca-certificates/cert.pem
+sudo nano /etc/ca-certificates
+sudo nano /etc/ca-certificates.conf 
+sudo update-ca-certificates
+exit
+ssh -p 1699 tails1154@192.168.0.107
+killall Xorg
+ls
+killall Xorg
+ls
+cd client
+ls
+cp firmware.py ../firmware.py.bak
+ls ../
+ls
+nano firmware.py 
+la
+ls
+scp -P 1699 firmware.py tails1154@192.168.0.107:/srv/http/tailsnet/client/firmware.py
+ls
+cd
+ls
+cd sc
+cd scripts/
+ls
+./initial.sh 
+cd
+ls
+startx
+sudo reboot now
+ls
+ssh -p 1699 tails1154@192.168.0.107
+killall Xorg
+s
+ls
+nano runner.sh
+ls
+killall Xorg
+ls
+sudo reboot now
