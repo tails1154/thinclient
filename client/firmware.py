@@ -96,7 +96,7 @@ ssid = open("/home/tails1154/ssid.txt", "rt").read()
 global modem
 pygame.mixer.init()
 global version
-version = "v1.1.1"
+version = "v1.1.3"
 
 
 global running
@@ -115,7 +115,8 @@ def on_loaded():
     send_power_led("warning on")
     select()
     window.evaluate_js("document.addEventListener('keydown',e=>{if(e.key==='F10'){e.preventDefault();let o=document.createElement('div');o.style='position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;z-index:9999;';let d=document.createElement('div');d.style='background:#fff;padding:20px;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.5);display:flex;flex-direction:column;gap:10px;';let i=document.createElement('input');i.type='text';i.placeholder='Enter URL (e.g., https://example.com)';i.style='padding:10px;font-size:16px;width:300px;';let g=document.createElement('button');g.textContent='Go';g.style='padding:10px;font-size:16px;';g.onclick=()=>{let u=i.value.trim();if(!/^https?:\/\//i.test(u))u='https://'+u;window.location.href=u};let c=document.createElement('button');c.textContent='Cancel';c.style='padding:10px;';c.onclick=()=>document.body.removeChild(o);let b=document.createElement('div');b.style='display:flex;justify-content:space-between;gap:10px;';b.appendChild(g);b.appendChild(c);d.appendChild(i);d.appendChild(b);o.appendChild(d);document.body.appendChild(o);i.focus();}});")
-    window.evaluate_js("(()=>{let i=0,e=[...document.querySelectorAll('a,button,input,select,textarea,[tabindex]')].filter(el=>el.offsetParent!==null),s=document.createElement('div');s.style='position:absolute;border:2px solid blue;pointer-events:none;z-index:999999;transition:.1s all ease;';document.body.appendChild(s);function move(){if(!e[i])return;let r=e[i].getBoundingClientRect();s.style.top=(r.top+scrollY)+'px';s.style.left=(r.left+scrollX)+'px';s.style.width=r.width+'px';s.style.height=r.height+'px';e[i].scrollIntoView({block:'nearest'});}move();document.addEventListener('keydown',k=>{if(k.key==='ArrowDown')i=(i+1)%e.length,move();else if(k.key==='ArrowUp')i=(i-1+e.length)%e.length,move();else if(k.key==='Enter'){let t=e[i];t.focus();if(typeof t.click==='function')t.click();}});})();")
+    #window.evaluate_js("(()=>{let i=0,e=[...document.querySelectorAll('a,p,button,input,select,textarea,p,[tabindex]')].filter(el=>el.offsetParent!==null),s=document.createElement('div');s.style='position:absolute;border:2px solid blue;pointer-events:none;z-index:999999;transition:.1s all ease;';document.body.appendChild(s);function move(){if(!e[i])return;let r=e[i].getBoundingClientRect();s.style.top=(r.top+scrollY)+'px';s.style.left=(r.left+scrollX)+'px';s.style.width=r.width+'px';s.style.height=r.height+'px';e[i].scrollIntoView({block:'nearest'});}move();document.addEventListener('keydown',k=>{if(k.key==='ArrowDown')i=(i+1)%e.length,move();else if(k.key==='ArrowUp')i=(i-1+e.length)%e.length,move();else if(k.key==='Enter'){let t=e[i];t.focus();if(typeof t.click==='function')t.click();}});})();")
+    window.evaluate_js("(()=>{let i=0,s=document.createElement('div');s.style='position:absolute;border:2px solid blue;pointer-events:none;z-index:999999;transition:.1s all ease;';document.body.appendChild(s);function getElements(){return[...document.querySelectorAll('a,button,input,select,textarea,[tabindex]')].filter(el=>el.offsetParent!==null);}function move(e){if(!e[i])return;let r=e[i].getBoundingClientRect();s.style.top=(r.top+scrollY)+'px';s.style.left=(r.left+scrollX)+'px';s.style.width=r.width+'px';s.style.height=r.height+'px';e[i].scrollIntoView({block:'nearest'});}let elements=getElements();move(elements);document.addEventListener('keydown',k=>{elements=getElements();if(k.key==='ArrowDown')i=(i+1)%elements.length,move(elements);else if(k.key==='ArrowUp')i=(i-1+elements.length)%elements.length,move(elements);else if(k.key==='Enter'){let t=elements[i];t.focus();if(typeof t.click==='function')t.click();}});})();")
     window.evaluate_js("document.addEventListener('keydown',e=>{if(e.key==='F1'){e.preventDefault();location.href='http://192.168.0.107/tailsnet/assets/home.html';}});")
     pygame.mixer.music.stop()
 running = True
@@ -192,10 +193,10 @@ while running:
                         connected = True
                         break
                 proxy_url = requests.get(f"{ip}:3000/api/proxy?ssid={ssid}").text
-                proxy_url = f"http://192.168.0.107:8080/?ssid={ssid}"
+                proxy_url = f"http://192.168.0.107:8080/"
 ##                final_url = f"{proxy_url}?ssid={ssid}"
                 os.environ["http_proxy"] = proxy_url
-                os.environ["https_proxy"] = f"http://192.168.0.107:8080/?ssid={ssid}"
+                os.environ["https_proxy"] = f"http://192.168.0.107:8080/"
                # api = API()
                 api = API()
                 global window
