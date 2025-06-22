@@ -7,9 +7,56 @@ import socket
 from Xlib import display, X
 from Xlib.protocol import request
 import threading
+import time
 
 
 global power
+
+
+
+
+global gpioEnabled
+
+
+
+# Some client options
+
+gpioEnabled = True # Enables gpio interfaces, change the pins if needed.
+
+# for gpioEnabled
+powerPin = 26 # Change this to the bcm pin your power button is on.
+
+
+
+# End gpioEnabled suboptions
+
+# End client options
+
+
+if gpioEnabled:
+ import RPi.GPIO as GPIO
+ GPIO.setmode(GPIO.BCM)
+ GPIO.setup(powerPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
+
+
+
+
+def gpioPowerScan():
+ global power
+ if gpioEnabled:
+  try:
+    while True:
+     if GPIO.input(powerPin) == GPIO.LOW:
+      power = not power
+     time.sleep(1)
+  except Exception as e:
+    print("GPIO error: " + str(e))
+
+
+
+
+gpioPowerThread = threading.Thread(target=gpioPowerScan)
+gpioPowerThread.start()
 
 
 global browserStarting
@@ -24,6 +71,7 @@ class API:
         api = API()
         api.close()
         update()
+        sys.exit(0)
     def close(self):
         send_power_led("warning off")
         window.destroy()
@@ -98,7 +146,7 @@ ssid = open("/home/tails1154/ssid.txt", "rt").read()
 global modem
 pygame.mixer.init()
 global version
-version = "v1.21.0"
+version = "v1.3.0-alpha6"
 
 
 global running
@@ -113,6 +161,7 @@ def draw_to_screen(x, y, text):
     text_surface = font.render(text, True, (0, 0, 0))
     screen.blit(text_surface, (x, y))
 def on_loaded():
+    subprocess.run(["killall", "connblink.sh"])
     browserStarting = False
     send_power_led("warning on")
     select()
@@ -180,6 +229,7 @@ while running:
                 screen.fill("grey")
                 modem.play()
                 draw_to_screen(500, 500, "Connecting")
+                #subprocess.run(["/home/tails1154/connblink.sh", "&"], shell=True)
                 pygame.mixer.music.stop()
                 pygame.mixer.music.unload()
                 pygame.mixer.music.load("/home/tails1154/client/assets/dialing.wav", namehint="wav")
@@ -245,3 +295,5 @@ while running:
 
 
 pygame.quit()
+if gpioEnabled:
+ GPIO.cleanup()

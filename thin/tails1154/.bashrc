@@ -114,7 +114,11 @@ fi
 #cd /home/tails1154
 #./runner.sh
 clear
+echo "Making sure we have an IP..."
+sudo dhclient
+clear
 echo "Loading..."
+echo "Press [v] now to set the volume"
 export PATH=$PATH:/home/tails1154/.local/bin
 #export HTTP_PROXY="$(cat /home/tails1154/ip.txt):8080/"
 
@@ -129,6 +133,9 @@ timeout=20
 	if [[ $key == "t" ]]; then
 		pressed="yes"
 		#break
+	fi
+	if [[ $key == "v" ]]; then
+		pulsemixer
 	fi
 	sleep 0.1
 stty "$stty_orig"

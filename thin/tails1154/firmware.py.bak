@@ -89,7 +89,7 @@ pygame.init()
 screen = pygame.display.set_mode((1280, 720))
 clock = pygame.time.Clock()
 power = True
-ip = "http://192.168.0.107"
+ip = "http://127.0.0.1"
 font = pygame.font.SysFont('Arial', 48)
 ssid = open("/home/tails1154/ssid.txt", "rt").read()
 
@@ -191,14 +191,14 @@ while running:
                         connected = True
                         break
                 proxy_url = requests.get(f"{ip}:3000/api/proxy?ssid={ssid}").text
-                proxy_url = f"http://192.168.0.107:8080/?ssid={ssid}"
+                proxy_url = f"http://127.0.0.1:8080/?ssid={ssid}"
 ##                final_url = f"{proxy_url}?ssid={ssid}"
                 os.environ["http_proxy"] = proxy_url
-                os.environ["https_proxy"] = f"http://192.168.0.107:8080/?ssid={ssid}"
+                os.environ["https_proxy"] = f"http://127.0.0.1:8080/?ssid={ssid}"
                # api = API()
                 api = API()
                 global window
-                window = webview.create_window("TailsNet Proxy", "http://192.168.0.107/tailsnet/assets/splash.html", width=1280, height=720, js_api=api)
+                window = webview.create_window("TailsNet Proxy", "http://127.0.0.1/tailsnet/assets/splash.html", width=1280, height=720, js_api=api)
                 window.events.loaded += on_loaded
                 webview.settings = {
                  'ALLOW_DOWNLOADS': True,

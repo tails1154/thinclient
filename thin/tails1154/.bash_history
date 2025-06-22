@@ -953,3 +953,206 @@ ls
 killall Xorg
 ls
 sudo reboot now
+exit
+ls
+./scripts/initial.sh 
+ls
+killall Xorg
+ls
+rm -rf .cache/
+ls
+scp -P 1699 -r /home/tails1154 tails1154@192.168.0.107:/srv/http/tailsnet/thin/
+neofetch
+sudo apt install neofetch -y
+neofetch
+ls
+killall Xorg
+ls
+clear
+ssh -p 1699 tails1154@192.168.0.107
+nano .bashrc
+exit
+ls
+ip a
+ls
+nano .bashrc
+amixer
+amixer --tui
+pactl
+pactl tui
+pactl --help
+git clone https://github.com/GeorgeFilipkin/pulsemixer.git
+sudo apt install git -y
+git clone https://github.com/GeorgeFilipkin/pulsemixer.git
+cd pulsemixer/
+ls
+pip install . --break-system-packages
+cd ..
+pulsemixer
+ls
+rm -rf pulsemixer/
+ls
+nano .bashrc 
+ls
+exit
+ls
+nano .bashrc
+exit
+killall Xorg
+exit
+nano sender.py 
+ls
+python3 sender.py 
+nano sender.py 
+python3 sender.py 
+sudo raspi-config
+screen --help
+exit
+ip a
+exit
+sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+sudo apt install iptables -y
+sudo sysctl -w net.ipv4.ip_forward=1
+sudo iptables -t nat -A POSTROUTING -o wlan0 -j MASQUERADE
+\
+sudo nano /etc/ppp/peers
+sudo nano /etc/ppp/peers/gpio-peer
+ip a
+sudo nano /etc/ppp/peers/gpio-peer
+sudo systemctl start sshd
+sudo systemctl enable --now sshd
+sudo minicom --device /dev/serial0
+ls
+killall Xorg
+sudo pppd call gpio
+sudo ls /etc/ppp/peers
+sudo pppd call gpio-peer
+sudo minicom --device/ dev/serial0
+dfghhfdghfghdhghfdfghfghfghfghghdhgfhfghdfghfgfhgffgfdhghghgfhghgdfghgdghfgfgfgfgfgdfffghdfhgfhfgd
+sudo minicom --device /dev/serial0
+ls
+screen --help
+sudo screen -r /dev/serial0
+man screen
+screen -list
+screen -D
+screen -D /dev/serial0
+screen /dev/serial0
+ls
+ls
+killall screen
+sudo killall screen -9
+sudo minicom --device /dev/serial0
+sudo nano /boot/firmware/config.txt
+sudo reboot now
+ttls
+ls
+nano ip.txt
+printf "http://192.168.0.107" > ip.txt
+./scripts/initial.sh 
+ls
+sudo rm -rf /var/www/html/*
+ld
+;d
+;ls
+ls
+rm -rf thinclient/
+ls
+ssh 192.168.0.107
+ssh 192.168.0.107 -p 1699
+exit
+ls
+./scripts/initial.sh 
+startx
+;s
+ls
+nano runner.sh 
+ls
+cd logs
+ls
+nano runner.log 
+ls
+rm -rf runner.log 
+cd
+ls
+startx
+clear
+ls
+lsl
+ls
+l
+sl
+python3 b.py
+ls
+exit
+exitexit
+exit
+clear
+ls
+touch .debug
+nano runner.sh
+nano .xinitrc
+exit
+nano .xinitrc
+exit
+startx
+nano light.py 
+nano b.py
+killall Xorg
+ls
+ssh -p 1699 tails1154@192.168.0.107
+killall Xorg
+ls
+killall connblink.sh
+ls
+killall connblink.sh
+killall Xorg
+ls
+killall Xorg
+if [ ls /home/tails1154/.debug ]; then echo "im gonna crash out fr"; done
+if [ ls /home/tails1154/.debug ]; then echo "im gonna crash out fr"; fi
+ls /home/tails1154/.debug; if [ $? ]; then echo "im gonna crash out fr"; fi
+if [ ls /home/tails1154/.debug ]; then echo "im gonna crash out fr"; fi
+ls /home/tails1154/.debug; if [ $? ]; then echo "im gonna crash out fr"; fi
+nano .xinitrc
+killall Xorg
+nano .xinitrc
+;s
+ls
+cp light.py light.py.bak
+nano light.py
+ls
+rm -rf light.py
+startx
+ls
+./connblink.sh 
+killall Xorg
+ls
+killall connblink.sh
+./scripts/initial.sh 
+ls
+killall Xorg
+killall Xorgls
+ls
+nano light.py
+nano b.py
+python3 b.py
+ls
+nano b.py
+killall Xorg
+tail -f logs/runner.log 
+ls
+nano runner.sh 
+ls
+nano .xinitrc
+ls
+tail -f logs/x.log 
+tail -f logs/runner.log 
+killall Xor
+killall Xorg
+ls
+xterm --help
+xterm -help
+xterm -help | pager
+ls
+nano .xinitrc 
