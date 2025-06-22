@@ -10,10 +10,10 @@ import threading
 import time
 
 
-global power
+#global power
 
 
-
+power = True
 
 global gpioEnabled
 
@@ -42,8 +42,8 @@ if gpioEnabled:
 
 
 def gpioPowerScan():
- global power
  if gpioEnabled:
+  global power
   try:
     while True:
      if GPIO.input(powerPin) == GPIO.LOW:
@@ -55,7 +55,7 @@ def gpioPowerScan():
 
 
 
-gpioPowerThread = threading.Thread(target=gpioPowerScan)
+gpioPowerThread = threading.Thread(target=gpioPowerScan, daemon=True)
 gpioPowerThread.start()
 
 
@@ -70,7 +70,7 @@ class API:
     def update(self):
         api = API()
         api.close()
-        update()
+        firmware_update()
         sys.exit(0)
     def close(self):
         send_power_led("warning off")
@@ -138,7 +138,7 @@ import webview
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
 clock = pygame.time.Clock()
-power = True
+
 ip = "http://192.168.0.107"
 font = pygame.font.SysFont('Arial', 48)
 ssid = open("/home/tails1154/ssid.txt", "rt").read()
@@ -146,7 +146,7 @@ ssid = open("/home/tails1154/ssid.txt", "rt").read()
 global modem
 pygame.mixer.init()
 global version
-version = "v1.3.0-alpha6"
+version = "v1.3.0"
 
 
 global running
@@ -197,12 +197,31 @@ def update():
                 cmd = f"curl -fsSL {ip}/tailsnet/update.sh | bash"
                 subprocess.run(cmd, shell=True, check=True)
                 open("counter.stop", "wt").write("")
-                sys.exit(0)
+                pygame.quit()
+    #            sys.exit(0)
+#		sys.exit(0)
+#		sys.exit(0)
+                subprocess.run(["killall", "-9", "python3"])
 
 #play_splash()
 # running = True
 # power = True
 while running:
+    # Check if power was toggled by GPIO
+    if not power:
+       pygame.mixer.music.stop()
+       pygame.mixer.music.unload()
+       print("Powered Off via GPIO")
+       screen.fill("black")
+       pygame.display.flip()
+       send_power_led("power off")
+       send_power_led("warning off")
+       # Optional: wait until button is released to prevent rapid toggling
+    #   while GPIO.input(powerPin) == GPIO.LOW:
+        #time.sleep(0.1)
+    else:
+       send_power_led("power on")
+    #  #modem.play()
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
